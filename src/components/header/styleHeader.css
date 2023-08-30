@@ -1,0 +1,378 @@
+#activeMenuHeader{
+    color: #0055ba !important;
+    border-bottom: 2px solid #0055ba;
+    padding-bottom: 6px;
+}
+.activeMenuHeader >a{
+    color: #0055ba !important;
+    border-bottom: 2px solid #0055ba;
+    padding-bottom: 6px;
+}
+.testAcvie>a{
+    color: #0055ba !important;
+    border-bottom: 2px solid #0055ba;
+    padding-bottom: 6px;
+}
+.border-bottom-menu:after {
+    content: "";
+    height: 1px;
+    background-color: #dadadc;
+    left: 25px;
+    right: 5px;
+    bottom: 0;
+    position: absolute;
+}
+.border-bottom-menu:before{
+        content: "";
+        width: 0;
+        height: 0;
+        border: 11px solid transparent;
+        border-bottom-color: #054d95;
+        position: absolute;
+        left: -11px;
+        top: -3px;
+        -webkit-transform: rotate(20deg);
+        transform: rotate(-45deg);  
+}
+.border-bottom-menu1:after {
+    content: "";
+    height: 1px;
+    background-color: #dadadc;
+    left: 25px;
+    right: 5px;
+    bottom: 0;
+    position: absolute;
+}
+.border-bottom-menu1:before{
+    content: "";
+        width: 0;
+        height: 0;
+        border: 11px solid transparent;
+        border-bottom-color: #054d95;
+        position: absolute;
+        left: -11px;
+        top: -11px;
+        -webkit-transform: rotate(20deg);
+        transform: rotate(-45deg);  
+}
+.ezfu-btn-profile{
+    height: unset;
+    background: #339cdf;
+    color: #fff;
+    padding: 6px 20px;
+    text-shadow: 0px -1px #278db8;
+    border: 1px solid #339cdf;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    cursor: pointer;
+    font-size: 9pt;
+    text-align: center;
+}
+.SDTM{
+    border: 1px solid #dedede;
+    min-width: 338px;
+}
+.MBR{
+    border: 1px solid #dedede;
+    box-shadow: 5px 5px 13px 0 #dad8d8
+}
+.BGTB{
+    justify-content: center;
+}
+.tt-t{
+    background-color: #fff;   
+    border-bottom: 1px solid #dedede;
+    margin-left: 260px;
+    /* padding: 0 10px 22px; */
+}
+.tttt{
+    border: 1px solid #dedede;
+}
+
+
+input[type=text], txtSymbol {
+    outline: none;
+    
+    border: 1px solid #DDDDDD;
+  }
+  /* input[type=text]:focus, txtSymbol:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%);
+  } */
+.container-spinner {
+    position: relative;
+}
+
+.spinner {
+    right: 3px;
+    top: 2px;
+    width: 1.3rem;
+    position: absolute;
+    background: #fff;
+    border-radius: 0.5rem;
+    display: none;
+    height: 24px;
+    display:block;
+}
+.size{
+    font-size: 14px;
+    text-transform: uppercase
+}
+.size-li{
+    font-size: 14px;
+}
+
+
+.size-input{
+    font-size: 13px;
+}
+
+.gb_srv{
+    top: -10px;
+    right: 66px;
+    border-color: transparent;
+    border-style: dashed dashed solid;
+    border-width: 0 8.5px 8.5px;
+    position: absolute;
+    left: 45px;
+    z-index: 1;
+    height: 0;
+    width: 0;
+    -webkit-animation: gb__a .2s;
+    animation: gb__a .2s;
+    border-bottom-color: rgba(0,0,0,.2);
+    top: 29px;
+}
+#divArrowBottomDown {
+    margin-top: 0;
+    text-align: center;
+    cursor: pointer;
+    
+}
+#divArrowBottomUp{
+    margin-top: 0;
+    height: 25px;
+    font-size: 1.5em;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase
+}
+.glyphicon-triangle-top:before {
+    content: "\e253";
+}
+#spanArrowDown{
+    font-size: 45px;
+    color: #b3b3b3;
+    margin-top: -10px;
+}
+.icon-spnTitlePanelBottom{
+    font-size: 45px !important;
+    color: #b3b3b3;
+}
+.border-Notification{
+    border-bottom: solid 1px #dddfe2;
+}
+#draggableH {
+    position: absolute;
+    z-index: 3;
+    cursor: row-resize;
+    background: transparent;
+    height: 6px;
+    width: 100%;
+    background: #fff;
+}
+a:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+a:focus, a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+.img-circle {
+    width: 85px;
+    height: 85px;
+    margin: 10px;
+}
+.icon_account{
+    position: absolute;
+    top: 12px;
+    right: unset;
+    bottom: unset;
+    left: 9px;
+    font-size: 12px;
+}
+.account-info li:hover {
+    background-color: darkgrey;
+}
+.gb_srvService {
+    right: 66px;
+    border-color: transparent;
+    border-style: dashed dashed solid;
+    border-width: 0 8.5px 8.5px;
+    position: absolute;
+    left: 12px;
+    z-index: 1;
+    height: 0;
+    width: 0;
+    animation: gb__a .2s;
+    border-bottom-color: rgba(0,0,0,.2);
+    top: 25px;
+}
+.gb_srvNoti {
+    right: 66px;
+    border-color: transparent;
+    border-style: dashed dashed solid;
+    border-width: 0 8.5px 8.5px;
+    position: absolute;
+    left: 9px;
+    z-index: 1;
+    height: 0;
+    width: 0;
+    animation: gb__a .2s;
+    border-bottom-color: rgba(0,0,0,.2);
+    top: 25px;
+}
+.service__col ul li > a {
+     display: block;
+}
+.notification__togglelyout {
+   
+    border: 1px solid #ccc;
+  
+  
+}
+.account-info li >.fa {
+    position: absolute;
+    top: 10px;
+    right: unset;
+    bottom: unset;
+    left: 10px;
+}
+.content__area ul li .anchorContainer .content__loadmore .img__content__lfloat {
+    float: left;
+}
+.notification__content .content__area ul li .anchorContainer .content__loadmore .img__content__lfloat img {
+    display: block;
+    height: 40px;
+    margin-right: 12px;
+    width: 40px;
+    margin-top: 3px;
+}
+.notification__content .content__area ul li .anchorContainer .content__loaddetails a {
+    
+}
+.notification__content .content__area ul li .anchorContainer .content__timestamp {
+    float: right;
+    padding-right: 5px;
+}
+.notification__content .content__area ul li .anchorContainer .content__timestamp .timer {
+    cursor: default;
+    color: #90949c;
+    position: absolute;
+    right: 5px;
+    top: 28px;
+}
+.notification__content .content__area ul li .anchorContainer .content__loaddetails a img {
+    cursor: pointer;
+}
+.anchorContainer .content__loadmore .content__detail .con__detail__title .content__detail__title {
+    font-weight: 600;
+}
+.anchorContainer .content__loadmore .content__detail .content__detail__content__short {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 235px;
+    height: auto;
+}
+.anchorContainer .content__loadmore .content__detail .content__detail__content {
+    display: block;
+}
+.anchorContainer .content__loadmore .content__detail div {
+    line-height: 20px;
+}
+.anchorContainer .content__loadmore .img__content__lfloat img {
+    display: block;
+    height: 40px;
+    margin-right: 12px;
+    width: 40px;
+    margin-top: 3px;
+}
+.anchorContainer .content__loadmore .content__detail .content__detail__content__short {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 235px;
+}
+.anchorContainer .content__loaddetails a {
+ 
+    padding-top: 7px;
+}
+.notification__content .content__area ul li .anchorContainer .content__loadmore .img__content__lfloat svg {
+    display: block;
+    height: 40px;
+    margin-right: 12px;
+    width: 40px;
+    margin-top: 3px;
+}
+/* .notification__content .content__area ul li {
+    position: relative;
+    border-bottom: 1px solid #dddfe2;
+    overflow: hidden;
+} */
+.eztrade__notification .eztrade__notification__bell .bell__button .bell__button__click .bell_count .noti__value {
+    background-color: #fa3e3e;
+    border-radius: 2px;
+    color: #fff;
+    padding: 1px 3px;
+    background-clip: padding-box;
+    display: inline-block;
+    font-size: 10px;
+    line-height: 1.3;
+    min-height: 13px;
+}
+.eztrade__notification {
+    position: relative;
+}
+.eztrade__notification .eztrade__notification__bell {
+    display: inline-block;
+    padding: 0 10px;
+    position: relative;
+    cursor: pointer;
+}
+.eztrade__notification .eztrade__notification__bell .bell__button {
+    text-decoration: none;
+    outline: none;
+    display: block;
+    cursor: pointer;
+}
+.eztrade__notification__bell .bell__button .bell__button__click {
+    position: relative;
+}
+.noti__value {
+    background-color: #fa3e3e;
+    border-radius: 2px;
+    color: #fff;
+    padding: 1px 3px;
+    background-clip: padding-box;
+    display: inline-block;
+    font-size: 10px;
+    line-height: 1.3;
+    min-height: 13px;
+}
+@media (max-width: 1280px){
+   body .fpts-header .header-center ul li {
+        list-style-type: none;
+        font-size: 9px;
+        padding: 0px 6px 0;
+        /* border-right: 1px solid #e9e9e9; */
+        border-right: none;
+        text-transform: uppercase;
+        position: relative;
+        background: #fff;
+    }
+}

@@ -1,0 +1,995 @@
+{
+  "Data": {
+    "Code": 0,
+    "Message": "SUCCESS",
+    "Data": {
+        "Table": [
+            {
+                "SUM_STOCK": 3569600,
+                "SUM_CASH": 1462140,
+                "AVAL_STOCK": 3569600,
+                "ABUY_STOCK": 0,
+                "ARIGHT_STOCK": 0,
+                "ALIMIT_STOCK": 0,
+                "ACASH_AMOUNT": 1462140,
+                "AREC_CASH_SELL": 0,
+                "AREC_CASH_T0": 0,
+                "AREC_CASH_T1": 0,
+                "AREC_CASH_T2": 0,
+                "ARE_CASH_DEVIDEND": 0,
+                "ARE_CASH_OTHER": 0,
+                "AREMAIN_DEBT": 0,
+                "ASAVINGTOTAL": 0
+            }
+        ],
+        "Table1": [
+            {
+                "ASTOCKCODE": "E1VFVN30",
+                "ATRADING_READY_TOTAL": 10,
+                "ABUY_INTRADY": 0,
+                "AT1": 0,
+                "AT2": 0,
+                "AWAIT_REC_RIGHT": 0,
+                "AMORTGATE_BANK": 0,
+                "ATRANSFER_RESTRICTED": 0,
+                "ATOTAL_AMOUNT": 10,
+                "AMARKET_PRICE": 21100,
+                "AMARKET_VALUE": 211000,
+                "AAVG_PRICE": 10700,
+                "AROOT_VALUE": 107000,
+                "APROFIT_LOSS_VAL": 104000,
+                "APROFIT_LOSS_RATE": 97.2,
+                "ACAPITAL_STRUCTURE": 4.38,
+                "APORTFOLIO_RATE": 5.91
+            },
+            {
+                "ASTOCKCODE": "HLA",
+                "ATRADING_READY_TOTAL": 210,
+                "ABUY_INTRADY": 0,
+                "AT1": 0,
+                "AT2": 0,
+                "AWAIT_REC_RIGHT": 0,
+                "AMORTGATE_BANK": 0,
+                "ATRANSFER_RESTRICTED": 0,
+                "ATOTAL_AMOUNT": 210,
+                "AMARKET_PRICE": 600,
+                "AMARKET_VALUE": 126000,
+                "AAVG_PRICE": 2528,
+                "AROOT_VALUE": 530843,
+                "APROFIT_LOSS_VAL": -404843,
+                "APROFIT_LOSS_RATE": -76.26,
+                "ACAPITAL_STRUCTURE": 21.74,
+                "APORTFOLIO_RATE": 3.53
+            },
+            {
+                "ASTOCKCODE": "STB",
+                "ATRADING_READY_TOTAL": 3,
+                "ABUY_INTRADY": 0,
+                "AT1": 0,
+                "AT2": 0,
+                "AWAIT_REC_RIGHT": 0,
+                "AMORTGATE_BANK": 0,
+                "ATRANSFER_RESTRICTED": 0,
+                "ATOTAL_AMOUNT": 3,
+                "AMARKET_PRICE": 30550,
+                "AMARKET_VALUE": 91650,
+                "AAVG_PRICE": 14692,
+                "AROOT_VALUE": 44077,
+                "APROFIT_LOSS_VAL": 47573,
+                "APROFIT_LOSS_RATE": 107.93,
+                "ACAPITAL_STRUCTURE": 1.8,
+                "APORTFOLIO_RATE": 2.57
+            },
+            {
+                "ASTOCKCODE": "HBC",
+                "ATRADING_READY_TOTAL": 10,
+                "ABUY_INTRADY": 0,
+                "AT1": 0,
+                "AT2": 0,
+                "AWAIT_REC_RIGHT": 0,
+                "AMORTGATE_BANK": 0,
+                "ATRANSFER_RESTRICTED": 0,
+                "ATOTAL_AMOUNT": 10,
+                "AMARKET_PRICE": 10850,
+                "AMARKET_VALUE": 108500,
+                "AAVG_PRICE": 8500,
+                "AROOT_VALUE": 85000,
+                "APROFIT_LOSS_VAL": 23500,
+                "APROFIT_LOSS_RATE": 27.65,
+                "ACAPITAL_STRUCTURE": 3.48,
+                "APORTFOLIO_RATE": 3.04
+            },
+            {
+                "ASTOCKCODE": "FLC",
+                "ATRADING_READY_TOTAL": 100,
+                "ABUY_INTRADY": 0,
+                "AT1": 0,
+                "AT2": 0,
+                "AWAIT_REC_RIGHT": 0,
+                "AMORTGATE_BANK": 0,
+                "ATRANSFER_RESTRICTED": 0,
+                "ATOTAL_AMOUNT": 100,
+                "AMARKET_PRICE": 3500,
+                "AMARKET_VALUE": 350000,
+                "AAVG_PRICE": 4180,
+                "AROOT_VALUE": 418000,
+                "APROFIT_LOSS_VAL": -68000,
+                "APROFIT_LOSS_RATE": -16.27,
+                "ACAPITAL_STRUCTURE": 17.12,
+                "APORTFOLIO_RATE": 9.81
+            },
+            {
+                "ASTOCKCODE": "HID",
+                "ATRADING_READY_TOTAL": 10,
+                "ABUY_INTRADY": 0,
+                "AT1": 0,
+                "AT2": 0,
+                "AWAIT_REC_RIGHT": 0,
+                "AMORTGATE_BANK": 0,
+                "ATRANSFER_RESTRICTED": 0,
+                "ATOTAL_AMOUNT": 10,
+                "AMARKET_PRICE": 3870,
+                "AMARKET_VALUE": 38700,
+                "AAVG_PRICE": 2440,
+                "AROOT_VALUE": 24400,
+                "APROFIT_LOSS_VAL": 14300,
+                "APROFIT_LOSS_RATE": 58.61,
+                "ACAPITAL_STRUCTURE": 1,
+                "APORTFOLIO_RATE": 1.08
+            },
+            {
+                "ASTOCKCODE": "AMD",
+                "ATRADING_READY_TOTAL": 10,
+                "ABUY_INTRADY": 0,
+                "AT1": 0,
+                "AT2": 0,
+                "AWAIT_REC_RIGHT": 0,
+                "AMORTGATE_BANK": 0,
+                "ATRANSFER_RESTRICTED": 0,
+                "ATOTAL_AMOUNT": 10,
+                "AMARKET_PRICE": 1100,
+                "AMARKET_VALUE": 11000,
+                "AAVG_PRICE": 2620,
+                "AROOT_VALUE": 26200,
+                "APROFIT_LOSS_VAL": -15200,
+                "APROFIT_LOSS_RATE": -58.02,
+                "ACAPITAL_STRUCTURE": 1.07,
+                "APORTFOLIO_RATE": 0.31
+            },
+            {
+                "ASTOCKCODE": "PVD",
+                "ATRADING_READY_TOTAL": 23,
+                "ABUY_INTRADY": 0,
+                "AT1": 0,
+                "AT2": 0,
+                "AWAIT_REC_RIGHT": 0,
+                "AMORTGATE_BANK": 0,
+                "ATRANSFER_RESTRICTED": 0,
+                "ATOTAL_AMOUNT": 23,
+                "AMARKET_PRICE": 25650,
+                "AMARKET_VALUE": 589950,
+                "AAVG_PRICE": 12543,
+                "AROOT_VALUE": 288500,
+                "APROFIT_LOSS_VAL": 301450,
+                "APROFIT_LOSS_RATE": 104.49,
+                "ACAPITAL_STRUCTURE": 11.81,
+                "APORTFOLIO_RATE": 16.53
+            },
+            {
+                "ASTOCKCODE": "SJF",
+                "ATRADING_READY_TOTAL": 10,
+                "ABUY_INTRADY": 0,
+                "AT1": 0,
+                "AT2": 0,
+                "AWAIT_REC_RIGHT": 0,
+                "AMORTGATE_BANK": 0,
+                "ATRANSFER_RESTRICTED": 0,
+                "ATOTAL_AMOUNT": 10,
+                "AMARKET_PRICE": 4470,
+                "AMARKET_VALUE": 44700,
+                "AAVG_PRICE": 2070,
+                "AROOT_VALUE": 20700,
+                "APROFIT_LOSS_VAL": 24000,
+                "APROFIT_LOSS_RATE": 115.94,
+                "ACAPITAL_STRUCTURE": 0.85,
+                "APORTFOLIO_RATE": 1.25
+            },
+            {
+                "ASTOCKCODE": "TGG",
+                "ATRADING_READY_TOTAL": 10,
+                "ABUY_INTRADY": 0,
+                "AT1": 0,
+                "AT2": 0,
+                "AWAIT_REC_RIGHT": 0,
+                "AMORTGATE_BANK": 0,
+                "ATRANSFER_RESTRICTED": 0,
+                "ATOTAL_AMOUNT": 10,
+                "AMARKET_PRICE": 3750,
+                "AMARKET_VALUE": 37500,
+                "AAVG_PRICE": 1150,
+                "AROOT_VALUE": 11500,
+                "APROFIT_LOSS_VAL": 26000,
+                "APROFIT_LOSS_RATE": 226.09,
+                "ACAPITAL_STRUCTURE": 0.47,
+                "APORTFOLIO_RATE": 1.05
+            },
+            {
+                "ASTOCKCODE": "CIG",
+                "ATRADING_READY_TOTAL": 20,
+                "ABUY_INTRADY": 0,
+                "AT1": 0,
+                "AT2": 0,
+                "AWAIT_REC_RIGHT": 0,
+                "AMORTGATE_BANK": 0,
+                "ATRANSFER_RESTRICTED": 0,
+                "ATOTAL_AMOUNT": 20,
+                "AMARKET_PRICE": 7970,
+                "AMARKET_VALUE": 159400,
+                "AAVG_PRICE": 1825,
+                "AROOT_VALUE": 36500,
+                "APROFIT_LOSS_VAL": 122900,
+                "APROFIT_LOSS_RATE": 336.71,
+                "ACAPITAL_STRUCTURE": 1.49,
+                "APORTFOLIO_RATE": 4.47
+            },
+            {
+                "ASTOCKCODE": "CLG",
+                "ATRADING_READY_TOTAL": 10,
+                "ABUY_INTRADY": 0,
+                "AT1": 0,
+                "AT2": 0,
+                "AWAIT_REC_RIGHT": 0,
+                "AMORTGATE_BANK": 0,
+                "ATRANSFER_RESTRICTED": 0,
+                "ATOTAL_AMOUNT": 10,
+                "AMARKET_PRICE": 800,
+                "AMARKET_VALUE": 8000,
+                "AAVG_PRICE": 1650,
+                "AROOT_VALUE": 16500,
+                "APROFIT_LOSS_VAL": -8500,
+                "APROFIT_LOSS_RATE": -51.52,
+                "ACAPITAL_STRUCTURE": 0.68,
+                "APORTFOLIO_RATE": 0.22
+            },
+            {
+                "ASTOCKCODE": "ATG",
+                "ATRADING_READY_TOTAL": 10,
+                "ABUY_INTRADY": 0,
+                "AT1": 0,
+                "AT2": 0,
+                "AWAIT_REC_RIGHT": 0,
+                "AMORTGATE_BANK": 0,
+                "ATRANSFER_RESTRICTED": 0,
+                "ATOTAL_AMOUNT": 10,
+                "AMARKET_PRICE": 3200,
+                "AMARKET_VALUE": 32000,
+                "AAVG_PRICE": 2270,
+                "AROOT_VALUE": 22700,
+                "APROFIT_LOSS_VAL": 9300,
+                "APROFIT_LOSS_RATE": 40.97,
+                "ACAPITAL_STRUCTURE": 0.93,
+                "APORTFOLIO_RATE": 0.9
+            },
+            {
+                "ASTOCKCODE": "LMH",
+                "ATRADING_READY_TOTAL": 10,
+                "ABUY_INTRADY": 0,
+                "AT1": 0,
+                "AT2": 0,
+                "AWAIT_REC_RIGHT": 0,
+                "AMORTGATE_BANK": 0,
+                "ATRANSFER_RESTRICTED": 0,
+                "ATOTAL_AMOUNT": 10,
+                "AMARKET_PRICE": 5000,
+                "AMARKET_VALUE": 50000,
+                "AAVG_PRICE": 2100,
+                "AROOT_VALUE": 21000,
+                "APROFIT_LOSS_VAL": 29000,
+                "APROFIT_LOSS_RATE": 138.1,
+                "ACAPITAL_STRUCTURE": 0.86,
+                "APORTFOLIO_RATE": 1.4
+            },
+            {
+                "ASTOCKCODE": "BMI",
+                "ATRADING_READY_TOTAL": 12,
+                "ABUY_INTRADY": 0,
+                "AT1": 0,
+                "AT2": 0,
+                "AWAIT_REC_RIGHT": 0,
+                "AMORTGATE_BANK": 0,
+                "ATRANSFER_RESTRICTED": 0,
+                "ATOTAL_AMOUNT": 12,
+                "AMARKET_PRICE": 25900,
+                "AMARKET_VALUE": 310800,
+                "AAVG_PRICE": 15500,
+                "AROOT_VALUE": 186000,
+                "APROFIT_LOSS_VAL": 124800,
+                "APROFIT_LOSS_RATE": 67.1,
+                "ACAPITAL_STRUCTURE": 7.62,
+                "APORTFOLIO_RATE": 8.71
+            },
+            {
+                "ASTOCKCODE": "SSI",
+                "ATRADING_READY_TOTAL": 22,
+                "ABUY_INTRADY": 0,
+                "AT1": 0,
+                "AT2": 0,
+                "AWAIT_REC_RIGHT": 0,
+                "AMORTGATE_BANK": 0,
+                "ATRANSFER_RESTRICTED": 0,
+                "ATOTAL_AMOUNT": 22,
+                "AMARKET_PRICE": 28100,
+                "AMARKET_VALUE": 618200,
+                "AAVG_PRICE": 11909,
+                "AROOT_VALUE": 262000,
+                "APROFIT_LOSS_VAL": 356200,
+                "APROFIT_LOSS_RATE": 135.95,
+                "ACAPITAL_STRUCTURE": 10.73,
+                "APORTFOLIO_RATE": 17.32
+            },
+            {
+                "ASTOCKCODE": "PTL",
+                "ATRADING_READY_TOTAL": 10,
+                "ABUY_INTRADY": 0,
+                "AT1": 0,
+                "AT2": 0,
+                "AWAIT_REC_RIGHT": 0,
+                "AMORTGATE_BANK": 0,
+                "ATRANSFER_RESTRICTED": 0,
+                "ATOTAL_AMOUNT": 10,
+                "AMARKET_PRICE": 4680,
+                "AMARKET_VALUE": 46800,
+                "AAVG_PRICE": 3000,
+                "AROOT_VALUE": 30000,
+                "APROFIT_LOSS_VAL": 16800,
+                "APROFIT_LOSS_RATE": 56,
+                "ACAPITAL_STRUCTURE": 1.23,
+                "APORTFOLIO_RATE": 1.31
+            },
+            {
+                "ASTOCKCODE": "ROS",
+                "ATRADING_READY_TOTAL": 10,
+                "ABUY_INTRADY": 0,
+                "AT1": 0,
+                "AT2": 0,
+                "AWAIT_REC_RIGHT": 0,
+                "AMORTGATE_BANK": 0,
+                "ATRANSFER_RESTRICTED": 0,
+                "ATOTAL_AMOUNT": 10,
+                "AMARKET_PRICE": 2510,
+                "AMARKET_VALUE": 25100,
+                "AAVG_PRICE": 5640,
+                "AROOT_VALUE": 56400,
+                "APROFIT_LOSS_VAL": -31300,
+                "APROFIT_LOSS_RATE": -55.5,
+                "ACAPITAL_STRUCTURE": 2.31,
+                "APORTFOLIO_RATE": 0.7
+            },
+            {
+                "ASTOCKCODE": "LSS",
+                "ATRADING_READY_TOTAL": 10,
+                "ABUY_INTRADY": 0,
+                "AT1": 0,
+                "AT2": 0,
+                "AWAIT_REC_RIGHT": 0,
+                "AMORTGATE_BANK": 0,
+                "ATRANSFER_RESTRICTED": 0,
+                "ATOTAL_AMOUNT": 10,
+                "AMARKET_PRICE": 13500,
+                "AMARKET_VALUE": 135000,
+                "AAVG_PRICE": 5790,
+                "AROOT_VALUE": 57900,
+                "APROFIT_LOSS_VAL": 77100,
+                "APROFIT_LOSS_RATE": 133.16,
+                "ACAPITAL_STRUCTURE": 2.37,
+                "APORTFOLIO_RATE": 3.78
+            },
+            {
+                "ASTOCKCODE": "FTS",
+                "ATRADING_READY_TOTAL": 16,
+                "ABUY_INTRADY": 0,
+                "AT1": 0,
+                "AT2": 0,
+                "AWAIT_REC_RIGHT": 0,
+                "AMORTGATE_BANK": 0,
+                "ATRANSFER_RESTRICTED": 0,
+                "ATOTAL_AMOUNT": 16,
+                "AMARKET_PRICE": 31700,
+                "AMARKET_VALUE": 507200,
+                "AAVG_PRICE": 8750,
+                "AROOT_VALUE": 140000,
+                "APROFIT_LOSS_VAL": 367200,
+                "APROFIT_LOSS_RATE": 262.29,
+                "ACAPITAL_STRUCTURE": 5.73,
+                "APORTFOLIO_RATE": 14.21
+            },
+            {
+                "ASTOCKCODE": "TNT",
+                "ATRADING_READY_TOTAL": 10,
+                "ABUY_INTRADY": 0,
+                "AT1": 0,
+                "AT2": 0,
+                "AWAIT_REC_RIGHT": 0,
+                "AMORTGATE_BANK": 0,
+                "ATRANSFER_RESTRICTED": 0,
+                "ATOTAL_AMOUNT": 10,
+                "AMARKET_PRICE": 5510,
+                "AMARKET_VALUE": 55100,
+                "AAVG_PRICE": 3100,
+                "AROOT_VALUE": 31000,
+                "APROFIT_LOSS_VAL": 24100,
+                "APROFIT_LOSS_RATE": 77.74,
+                "ACAPITAL_STRUCTURE": 1.27,
+                "APORTFOLIO_RATE": 1.54
+            },
+            {
+                "ASTOCKCODE": "ART",
+                "ATRADING_READY_TOTAL": 10,
+                "ABUY_INTRADY": 0,
+                "AT1": 0,
+                "AT2": 0,
+                "AWAIT_REC_RIGHT": 0,
+                "AMORTGATE_BANK": 0,
+                "ATRANSFER_RESTRICTED": 0,
+                "ATOTAL_AMOUNT": 10,
+                "AMARKET_PRICE": 1300,
+                "AMARKET_VALUE": 13000,
+                "AAVG_PRICE": 2600,
+                "AROOT_VALUE": 26000,
+                "APROFIT_LOSS_VAL": -13000,
+                "APROFIT_LOSS_RATE": -50,
+                "ACAPITAL_STRUCTURE": 1.06,
+                "APORTFOLIO_RATE": 0.36
+            }
+        ],
+        "Table2": [
+            {
+                "ADATE": "10/08/2023",
+                "ANAV": 5031740,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "09/08/2023",
+                "ANAV": 5062740,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "08/08/2023",
+                "ANAV": 5073840,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "07/08/2023",
+                "ANAV": 5076191,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "04/08/2023",
+                "ANAV": 5044191,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "03/08/2023",
+                "ANAV": 4978941,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "02/08/2023",
+                "ANAV": 5026641,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "01/08/2023",
+                "ANAV": 5011291,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "31/07/2023",
+                "ANAV": 5085591,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "28/07/2023",
+                "ANAV": 5108541,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "27/07/2023",
+                "ANAV": 5054691,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "26/07/2023",
+                "ANAV": 5048141,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "25/07/2023",
+                "ANAV": 5040191,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "24/07/2023",
+                "ANAV": 5029931,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "21/07/2023",
+                "ANAV": 5001581,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "20/07/2023",
+                "ANAV": 4936531,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "19/07/2023",
+                "ANAV": 4937731,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "18/07/2023",
+                "ANAV": 4963031,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "17/07/2023",
+                "ANAV": 4989431,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "14/07/2023",
+                "ANAV": 4956981,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "13/07/2023",
+                "ANAV": 4928581,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "12/07/2023",
+                "ANAV": 4895631,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "11/07/2023",
+                "ANAV": 4888031,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "10/07/2023",
+                "ANAV": 4877781,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "07/07/2023 *",
+                "ANAV": 4843331,
+                "ANAV_IN": 0,
+                "ANAV_DE": 1001
+            },
+            {
+                "ADATE": "06/07/2023",
+                "ANAV": 4810432,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "05/07/2023",
+                "ANAV": 4835532,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "04/07/2023",
+                "ANAV": 4852982,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "03/07/2023",
+                "ANAV": 4773332,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "30/06/2023",
+                "ANAV": 4750932,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "29/06/2023",
+                "ANAV": 4777882,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "28/06/2023",
+                "ANAV": 4848632,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "27/06/2023",
+                "ANAV": 4857382,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "26/06/2023",
+                "ANAV": 4820887,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "23/06/2023",
+                "ANAV": 4834270,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "22/06/2023",
+                "ANAV": 4854320,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "21/06/2023",
+                "ANAV": 4817220,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "20/06/2023",
+                "ANAV": 4769520,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "19/06/2023",
+                "ANAV": 4740470,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "16/06/2023",
+                "ANAV": 4760570,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "15/06/2023",
+                "ANAV": 4774770,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "14/06/2023",
+                "ANAV": 4751970,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "13/06/2023",
+                "ANAV": 4782920,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "12/06/2023",
+                "ANAV": 4734820,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "09/06/2023",
+                "ANAV": 4725120,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "08/06/2023",
+                "ANAV": 4667070,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "07/06/2023",
+                "ANAV": 4731070,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "06/06/2023",
+                "ANAV": 4709520,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "05/06/2023",
+                "ANAV": 4665670,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "02/06/2023",
+                "ANAV": 4689570,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "01/06/2023",
+                "ANAV": 4654920,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "31/05/2023",
+                "ANAV": 4620370,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "30/05/2023",
+                "ANAV": 4596420,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "29/05/2023",
+                "ANAV": 4575220,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "26/05/2023",
+                "ANAV": 4553520,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "25/05/2023",
+                "ANAV": 4535520,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "24/05/2023",
+                "ANAV": 4542960,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "23/05/2023",
+                "ANAV": 4532660,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "22/05/2023",
+                "ANAV": 4520010,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "19/05/2023",
+                "ANAV": 4505910,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "18/05/2023",
+                "ANAV": 4464310,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "17/05/2023",
+                "ANAV": 4423610,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "16/05/2023",
+                "ANAV": 4435010,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "15/05/2023",
+                "ANAV": 4426060,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "12/05/2023",
+                "ANAV": 4429185,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "11/05/2023",
+                "ANAV": 4373935,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "10/05/2023",
+                "ANAV": 4400235,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "09/05/2023",
+                "ANAV": 4373485,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "08/05/2023",
+                "ANAV": 4348585,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "05/05/2023",
+                "ANAV": 4310635,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "04/05/2023",
+                "ANAV": 4310485,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "28/04/2023",
+                "ANAV": 4340135,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "27/04/2023",
+                "ANAV": 4283335,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "26/04/2023",
+                "ANAV": 4291835,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "25/04/2023",
+                "ANAV": 4257130,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "24/04/2023",
+                "ANAV": 4292403,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "21/04/2023",
+                "ANAV": 4308683,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "20/04/2023",
+                "ANAV": 4276873,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "19/04/2023",
+                "ANAV": 4282793,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "18/04/2023",
+                "ANAV": 4294193,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "17/04/2023",
+                "ANAV": 4238753,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "14/04/2023",
+                "ANAV": 4255573,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "13/04/2023",
+                "ANAV": 4294873,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "12/04/2023",
+                "ANAV": 4328193,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "11/04/2023",
+                "ANAV": 4352823,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "10/04/2023",
+                "ANAV": 4328573,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "07/04/2023",
+                "ANAV": 4348023,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "06/04/2023",
+                "ANAV": 4300853,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "05/04/2023",
+                "ANAV": 4336923,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            },
+            {
+                "ADATE": "04/04/2023",
+                "ANAV": 4320623,
+                "ANAV_IN": 0,
+                "ANAV_DE": 0
+            }
+        ],
+        "Table3": [
+            {
+                "ASTATUS": 1,
+                "TIME": "18:05 - 10/08/2023"
+            }
+        ]
+    }
+}
+}

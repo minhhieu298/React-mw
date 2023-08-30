@@ -1,0 +1,1595 @@
+// useEffect(() => {
+//   const isIFrame = (input: HTMLElement | null): input is HTMLIFrameElement =>
+//     input !== null && input.tagName === 'IFRAME';
+//   const iframe = (document.getElementById("iframe") as HTMLIFrameElement);
+//   const iframeObservable = new Observable((observer) => {
+//     const messageHandler = (event:any) => {
+//       observer.next(event.data);
+//     };
+//     if (isIFrame(iframe) && iframe.contentWindow) {
+//       console.log(iframe)
+//       console.log(iframe.contentWindow)
+//       iframe.contentWindow.postMessage({}, '*');
+//   }
+//     iframe.contentWindow?.addEventListener("message", messageHandler);
+//     return () => {
+//       iframe.contentWindow?.removeEventListener("message", messageHandler);
+//     };
+//   });
+//   const subscription = iframeObservable.subscribe((message:any) => {
+//     setData(message);
+//   });
+//   return () => subscription.unsubscribe();
+// }, []);
+
+//     <div className=''>
+
+// {/* <iframe id="iframe" src="/hnx/blank?843" ref={iframeRef}></iframe> */}
+// <p>{data}</p>
+//     <table className="w-full tableMW ">
+//   <thead>
+//     <tr>
+//       <th className='border border-borderHeadTableMarket p-2 text-textHeadTableMarket' rowSpan={2}>Mã</th>
+//       <th className='border border-borderHeadTableMarket p-2 text-textHeadTableMarket bg-BGTableHoverMarket' rowSpan={2}>TC</th>
+//       <th className='border border-borderHeadTableMarket p-2 text-textHeadTableMarket bg-BGTableHoverMarket' rowSpan={2}>Trần</th>
+//       <th className='border border-borderHeadTableMarket p-2 text-textHeadTableMarket bg-BGTableHoverMarket' rowSpan={2}>Sàn</th>
+//       <th className='border border-borderHeadTableMarket p-2 text-textHeadTableMarket' colSpan={6}>Mua</th>
+//       <th className='border border-borderHeadTableMarket p-2 text-textHeadTableMarket bg-BGTableHoverMarket' colSpan={3}>Khớp lệnh</th>
+//       <th className='border border-borderHeadTableMarket p-2 text-textHeadTableMarket' colSpan={6}>Bán</th>
+//       <th className='border border-borderHeadTableMarket p-2 text-textHeadTableMarket bg-BGTableHoverMarket' rowSpan={2}>Tổng KL</th>
+//       <th className='border border-borderHeadTableMarket p-2 text-textHeadTableMarket bg-BGTableHoverMarket' rowSpan={2}>Mở cửa</th>
+//       <th className='border border-borderHeadTableMarket p-2 text-textHeadTableMarket bg-BGTableHoverMarket' rowSpan={2}>Cao nhất</th>
+//       <th className='border border-borderHeadTableMarket p-2 text-textHeadTableMarket bg-BGTableHoverMarket' rowSpan={2}>Thấp nhất</th>
+//       <th className='border border-borderHeadTableMarket p-2 text-textHeadTableMarket bg-BGTableHoverMarket' rowSpan={2}>NN mua</th>
+//       <th className='border border-borderHeadTableMarket p-2 text-textHeadTableMarket bg-BGTableHoverMarket' rowSpan={2}>NN bán</th>
+//       <th className='border border-borderHeadTableMarket p-2 text-textHeadTableMarket bg-BGTableHoverMarket' rowSpan={2}>Room còn lại</th>
+//     </tr>
+//     <tr>
+//      <th className='border border-borderHeadTableMarket p-2 text-textHeadTableMarket'>G3</th>
+//      <th className='border border-borderHeadTableMarket p-2 text-textHeadTableMarket'>KL3</th>
+//      <th className='border border-borderHeadTableMarket p-2 text-textHeadTableMarket'>G2</th>
+//      <th className='border border-borderHeadTableMarket p-2 text-textHeadTableMarket'>KL2</th>
+//      <th className='border border-borderHeadTableMarket p-2 text-textHeadTableMarket' >G1</th>
+//      <th className='border border-borderHeadTableMarket p-2 text-textHeadTableMarket'>KL1</th>
+//      <th className='border border-borderHeadTableMarket p-2 text-textHeadTableMarket bg-BGTableHoverMarket'>Giá</th>
+//      <th className='border border-borderHeadTableMarket p-2 text-textHeadTableMarket bg-BGTableHoverMarket'>KL</th>
+//      <th className='border border-borderHeadTableMarket p-2 text-textHeadTableMarket bg-BGTableHoverMarket'>+-</th>
+//      <th className='border border-borderHeadTableMarket p-2 text-textHeadTableMarket'>G1</th>
+//      <th className='border border-borderHeadTableMarket p-2 text-textHeadTableMarket'>KL1</th>
+//      <th className='border border-borderHeadTableMarket p-2 text-textHeadTableMarket'>G2</th>
+//      <th className='border border-borderHeadTableMarket p-2 text-textHeadTableMarket'>KL2</th>
+//      <th className='border border-borderHeadTableMarket p-2 text-textHeadTableMarket'>G3</th>
+//      <th className='border border-borderHeadTableMarket p-2 text-textHeadTableMarket'>KL3</th>
+//     </tr>
+//   </thead>
+//   <tbody>
+//   {products?.map((dataTable:any) =>(
+//       <tr key={dataTable.RowID} id={`tr${dataTable.RowID}`}>
+
+//         <td className={`border px-1 py-0.5 font-normal border-borderBodyTableMarket text-xs text-right ${setColorMarket(dataTable.Info[13][1],dataTable.Info[18][1],dataTable.Info[15][1],dataTable.Info[14][1])}`}> {dataTable.RowID}</td>
+//         {/* <td>   {dataTable.Info.map((items:any) => (
+//               items.map((item:any) =>(
+//                 console.log(item),
+//                 item[13]
+            
+//               ))
+//   'border px-1 py-0.5 font-normal border-borderBodyTableMarket text-xs text-right ${`formatNumberMarket()`}'
+ 
+//       ))}</td>  */}
+//          {/* TTham chiếu */}
+//       <td className='border px-1 py-0.5 font-normal border-borderBodyTableMarket text-xs text-right bg-BGTableHoverMarket text-textTableMarketTC'>{formatNumber(dataTable.Info[13][1])}</td>   
+//       {/* Trần */}
+//       <td className='border px-1 py-0.5 font-normal border-borderBodyTableMarket text-xs text-right bg-BGTableHoverMarket text-textTableMarketTran'>{formatNumber(dataTable.Info[15][1])}</td>
+//       {/* Sàn */}
+//       <td className='border px-1 py-0.5 font-normal border-borderBodyTableMarket text-xs text-right bg-BGTableHoverMarket text-textTableMarketSan'>{formatNumber(dataTable.Info[14][1])}</td>
+//       {/* G3 Mua*/}
+//       <td className={`border px-1 py-0.5 font-normal border-borderBodyTableMarket text-xs text-right ${setColorMarket(dataTable.Info[13][1],dataTable.Info[8][1],dataTable.Info[15][1],dataTable.Info[14][1])}`}>{formatNumberMarket(dataTable.Info[8][1])}</td>
+//        {/* KL3 */}
+//       <td className={`border px-1 py-0.5 font-normal border-borderBodyTableMarket text-xs text-right ${setColorMarket(dataTable.Info[13][1],dataTable.Info[8][1],dataTable.Info[15][1],dataTable.Info[14][1])}`}>{formatNumberMarket(dataTable.Info[9][1])}</td>
+//        {/* G2 */}
+//       <td className={`border px-1 py-0.5 font-normal border-borderBodyTableMarket text-xs text-right ${setColorMarket(dataTable.Info[13][1],dataTable.Info[4][1],dataTable.Info[15][1],dataTable.Info[14][1])}`}>{formatNumberMarket(dataTable.Info[4][1])}</td>
+//        {/* KL2 */}
+//       <td className={`border px-1 py-0.5 font-normal border-borderBodyTableMarket text-xs text-right ${setColorMarket(dataTable.Info[13][1],dataTable.Info[4][1],dataTable.Info[15][1],dataTable.Info[14][1])}`}>{formatNumberMarket(dataTable.Info[5][1])}</td>
+//        {/* G1 */}
+//       <td className={`border px-1 py-0.5 font-normal border-borderBodyTableMarket text-xs text-right ${setColorMarket(dataTable.Info[13][1],dataTable.Info[0][1],dataTable.Info[15][1],dataTable.Info[14][1])}`}>{formatNumberMarket(dataTable.Info[0][1])}</td>
+//        {/* KL1 */}
+//       <td className={`border px-1 py-0.5 font-normal border-borderBodyTableMarket text-xs text-right ${setColorMarket(dataTable.Info[13][1],dataTable.Info[0][1],dataTable.Info[15][1],dataTable.Info[14][1])}`}>{formatNumberMarket(dataTable.Info[1][1])}</td>
+//        {/* Gia Khơp lenh */}
+//       <td className={`border px-1 py-0.5 font-normal border-borderBodyTableMarket text-xs text-right bg-BGTableHoverMarket ${setColorMarket(dataTable.Info[13][1],dataTable.Info[18][1],dataTable.Info[15][1],dataTable.Info[14][1])}`}>{formatNumberMarket(dataTable.Info[18][1])}</td>
+//        {/* KL */}
+//       <td className={`border px-1 py-0.5 font-normal border-borderBodyTableMarket text-xs text-right bg-BGTableHoverMarket ${setColorMarket(dataTable.Info[13][1],dataTable.Info[18][1],dataTable.Info[15][1],dataTable.Info[14][1])}`}>{formatNumberMarket(dataTable.Info[19][1])}</td>
+//        {/* +-*/}
+//       <td className={`border px-1 py-0.5 font-normal border-borderBodyTableMarket text-xs text-right bg-BGTableHoverMarket ${setColorMarket(dataTable.Info[13][1],dataTable.Info[18][1],dataTable.Info[15][1],dataTable.Info[14][1])}`}>{tinhGiaTC(dataTable.Info[13][1],dataTable.Info[18][1])}</td>
+//        {/* G1 Ban*/}
+//       <td className={`border px-1 py-0.5 font-normal border-borderBodyTableMarket text-xs text-right ${setColorMarket(dataTable.Info[13][1],dataTable.Info[2][1],dataTable.Info[15][1],dataTable.Info[14][1])}`}>{formatNumberMarket(dataTable.Info[2][1])}</td>
+//        {/* KL1 */}
+//       <td className={`border px-1 py-0.5 font-normal border-borderBodyTableMarket text-xs text-right ${setColorMarket(dataTable.Info[13][1],dataTable.Info[2][1],dataTable.Info[15][1],dataTable.Info[14][1])}`}>{formatNumberMarket(dataTable.Info[3][1])}</td>
+//        {/* G2 */}
+//       <td className={`border px-1 py-0.5 font-normal border-borderBodyTableMarket text-xs text-right ${setColorMarket(dataTable.Info[13][1],dataTable.Info[6][1],dataTable.Info[15][1],dataTable.Info[14][1])}`}>{formatNumberMarket(dataTable.Info[6][1])}</td>
+//        {/* KL2 */}
+//       <td className={`border px-1 py-0.5 font-normal border-borderBodyTableMarket text-xs text-right ${setColorMarket(dataTable.Info[13][1],dataTable.Info[6][1],dataTable.Info[15][1],dataTable.Info[14][1])}`}>{formatNumberMarket(dataTable.Info[7][1])}</td>  
+//        {/* G3 */}
+//       <td className={`border px-1 py-0.5 font-normal border-borderBodyTableMarket text-xs text-right ${setColorMarket(dataTable.Info[13][1],dataTable.Info[10][1],dataTable.Info[15][1],dataTable.Info[14][1])}`}>{formatNumberMarket(dataTable.Info[10][1])}</td>
+//        {/* KL3 */}
+//       <td className={`border px-1 py-0.5 font-normal border-borderBodyTableMarket text-xs text-right ${setColorMarket(dataTable.Info[13][1],dataTable.Info[10][1],dataTable.Info[15][1],dataTable.Info[14][1])}`}>{formatNumberMarket(dataTable.Info[11][1])}</td>
+//        {/* TKL */}
+//       <td className='border px-1 py-0.5 font-normal border-borderBodyTableMarket text-xs text-right bg-BGTableHoverMarket '>{formatNumberMarket(dataTable.Info[20][1])}</td> 
+//       <td className={`border px-1 py-0.5 font-normal border-borderBodyTableMarket text-xs text-right bg-BGTableHoverMarket ${setColorMarket(dataTable.Info[13][1],dataTable.Info[21][1],dataTable.Info[15][1],dataTable.Info[14][1])}`}>{formatNumberMarket(dataTable.Info[21][1])}</td>  
+//       <td className={`border px-1 py-0.5 font-normal border-borderBodyTableMarket text-xs text-right bg-BGTableHoverMarket ${setColorMarket(dataTable.Info[13][1],dataTable.Info[22][1],dataTable.Info[15][1],dataTable.Info[14][1])}`}>{formatNumberMarket(dataTable.Info[22][1])}</td>
+//       <td className={`border px-1 py-0.5 font-normal border-borderBodyTableMarket text-xs text-right bg-BGTableHoverMarket ${setColorMarket(dataTable.Info[13][1],dataTable.Info[23][1],dataTable.Info[15][1],dataTable.Info[14][1])}`}>{formatNumberMarket(dataTable.Info[23][1])}</td>
+//       <td className='border px-1 py-0.5 font-normal border-borderBodyTableMarket text-xs text-right bg-BGTableHoverMarket'>{formatNumberMarket(dataTable.Info[25][1])}</td>
+//       <td className='border px-1 py-0.5 font-normal border-borderBodyTableMarket text-xs text-right bg-BGTableHoverMarket'>{formatNumberMarket(dataTable.Info[26][1])}</td>
+//       <td className='border px-1 py-0.5 font-normal border-borderBodyTableMarket text-xs text-right bg-BGTableHoverMarket'>{formatNumberMarket(dataTable.Info[27][1])}</td>
+//       </tr>  
+//     ) 
+//     )
+    
+//     }
+    
+//   </tbody>
+// </table>
+// <IframeComponent/>
+// {/* <iframe id="iframe" src="/hnx/blank?843" ref={iframeRef}></iframe> */}
+
+//     {/* <iframe src="/hsx/blank?843"></iframe> */}
+//     </div>
+
+
+
+
+
+           
+        //  setTimeout(function() {
+        //   document.getElementById(`${arrRowID}_${arrayKL[indexPrice]}`)?.classList.add("bg-tdHover")
+        //   tdIndex?.classList.add("bg-tdHover")
+        // }, 500);
+        // const tdIndex = document.getElementById(`${arrRowID}_${arrInfo[0][0]}`);
+        // const valueTC= document.getElementById(`${arrRowID}_TC`)?.innerHTML;
+        
+        // const valueTran= document.getElementById(`${arrRowID}_Tran`)?.innerHTML;
+      
+        // const valueSan= document.getElementById(`${arrRowID}_San`)?.innerHTML;
+        
+        // const valuePT= document.getElementById(`${arrRowID}_PT`);
+        // //console.log(tdIndex)
+        // if (tdIndex)  {
+        //   tdIndex.innerHTML = `${formatNumberMarket(arrInfo[0][1])}`
+          
+        //   //tdIndex.classList.add("bg-tdHover")
+        //   tdIndex.style.backgroundColor ="#888888"
+        //   setTimeout(function() {
+        //     tdIndex.style.backgroundColor =""
+        //   }, 500);
+             
+        //   const indexPrice = arrayPrice.indexOf(arrInfo[0][0])
+        //   if(indexPrice !== -1)
+        //   {
+        //   if(valueTC && valueTran && valueSan)
+        //   {
+        //     if(arrInfo[0][0] === 11){
+        //       const PT =  tinhGiaTC(Number(valueTC),arrInfo[0][1])
+        //       const textColor=  colorTextTD(valueTC,valueTran,valueSan,arrInfo[0][1])
+        //       if(valuePT) valuePT.innerHTML = `${formatNumberMarket(PT)}`
+        //       tdIndex.classList.add(textColor)
+        //       document.getElementById(`${arrRowID}_${arrayKL[indexPrice]}`)?.classList.add(textColor)
+        //     }
+        //     else{
+        //       const textColor=  colorTextTD(valueTC,valueTran,valueSan,arrInfo[0][1])
+        //       tdIndex.classList.add(textColor)
+        //       document.getElementById(`${arrRowID}_${arrayKL[indexPrice]}`)?.classList.add(textColor)
+        //     }
+        
+        //   } 
+        // }
+     
+        // }
+
+   
+
+   // const colorTextTDMW = (tc?:string,tran?:string,san?:string,price?:number)=>{
+  //   let Color ="#FFF";
+  //   // if(price=== san){
+  //   //     Color="text-blue"
+  //   // }
+  //   if(price){
+  //     if(price===0){
+  //       Color="#FFF"
+  //   }
+  //   else if(price=== Number(san)){
+  //       Color="#66CCFF"
+  //   }
+  //   else if(price === Number(tran)){
+  //       Color="#FF00FF"
+  //   }
+  //   else if(price === Number(tc)){
+  //       Color="#F7FF31"
+  //   }
+  //   else if(price > Number(tc)){
+  //       Color="#00FF00"
+  //   }
+  //   else if(price<Number(tc) && price> Number(san)  )
+  //   {
+  //       Color="#FF0000"
+  //   }
+  //   }
+   
+  //   return Color;
+  // }
+
+
+
+  
+  // useEffect(() => {
+  //   const newConnection = new HubConnectionBuilder()
+  //     .withUrl("/hsx/signalr")
+  //     .configureLogging(signalR.LogLevel.Information)
+  //     .build();
+  //   setConnection(newConnection);
+  // }, []);
+  // useEffect(() => {
+  //   if (connection) {
+  //     connection
+  //       .start()
+  //       .then(() => {
+  //         console.log("Connected to SignalR hub!");
+  //         connection.on("ReceiveMessage", (user: string, message: string) => {
+  //           console.log(`Received message from ${user}: ${message}`);
+  //         });
+  //       })
+  //       .catch((error: Error) => console.log(error));
+  //   }
+  // }, [connection]);
+
+
+  //SortTable
+
+
+
+  import {
+  FormControlLabel,
+  IconButton,
+  Menu,
+  MenuItem,
+  Popover,
+  styled,
+  Switch,
+  Tooltip,onMouseMoveonMouseMove
+  Typography,
+  useTheme,
+} from "@mui/material";
+import "./style.css";
+import Box from "@mui/material/Box";
+import * as React from "react";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import GTranslateIcon from "@mui/icons-material/GTranslate";
+import ListMenu from "./listMenu";
+import { Link } from "react-router-dom";
+// import "../../styles/sidebar.css";
+import "../../styles/header.css";
+import Button from "@mui/material/Button";
+
+import NotificationsIcon from "@mui/icons-material/Notifications";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import { display } from "@mui/system";
+import menuImage from "../../images/menu.png" ;
+import exchangeImage from "../../images/exchange1.png" 
+interface Props {
+  darkMode: boolean;
+  handleThemeChange: () => void;
+}
+const label = { inputProps: { 'aria-label': 'Switch demo' } };
+const MaterialUISwitch = styled(Switch)(({ theme }) => ({
+  width: 52,
+  height: 30,
+  padding: 7,
+  "& .MuiSwitch-switchBase": {
+    margin: 1,
+    padding: 0,
+    transform: "translateX(6px)",
+    "&.Mui-checked": {
+      color: "#fff",
+      transform: "translateX(22px)",
+      "& .MuiSwitch-thumb:before": {
+        backgroundImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 20 20"><path fill="${encodeURIComponent(
+          "#fff"
+        )}" d="M4.2 2.5l-.7 1.8-1.8.7 1.8.7.7 1.8.6-1.8L6.7 5l-1.9-.7-.6-1.8zm15 8.3a6.7 6.7 0 11-6.6-6.6 5.8 5.8 0 006.6 6.6z"/></svg>')`,
+      },
+      "& + .MuiSwitch-track": {
+        opacity: 1,
+        backgroundColor: theme.palette.mode === "dark" ? "#fff" : "#000",
+      },
+    },
+  },
+  "& .MuiSwitch-thumb": {
+    backgroundColor: theme.palette.mode === "dark" ? "#000" : "#fff",
+    width: 26,
+    height: 26,
+    "&:before": {
+      content: "''",
+      position: "absolute",
+      width: "100%",
+      height: "100%",
+      left: 0,
+      top: 0,
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center",
+      backgroundImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 20 20"><path fill="${encodeURIComponent(
+        "#034e95"
+      )}" d="M9.305 1.667V3.75h1.389V1.667h-1.39zm-4.707 1.95l-.982.982L5.09 6.072l.982-.982-1.473-1.473zm10.802 0L13.927 5.09l.982.982 1.473-1.473-.982-.982zM10 5.139a4.872 4.872 0 00-4.862 4.86A4.872 4.872 0 0010 14.862 4.872 4.872 0 0014.86 10 4.872 4.872 0 0010 5.139zm0 1.389A3.462 3.462 0 0113.471 10a3.462 3.462 0 01-3.473 3.472A3.462 3.462 0 016.527 10 3.462 3.462 0 0110 6.528zM1.665 9.305v1.39h2.083v-1.39H1.666zm14.583 0v1.39h2.084v-1.39h-2.084zM5.09 13.928L3.616 15.4l.982.982 1.473-1.473-.982-.982zm9.82 0l-.982.982 1.473 1.473.982-.982-1.473-1.473zM9.305 16.25v2.083h1.389V16.25h-1.39z"/></svg>')`,
+    },
+  },
+  "& .MuiSwitch-track": {
+    opacity: 1,
+    backgroundColor: theme.palette.mode === "dark" ? "#8796A5" : "#aab4be",
+    borderRadius: 20 / 2,
+  },
+}));
+
+const BoxIcon = styled(Box)(({ theme }) => ({
+  width: "40px",
+  height: "40px",
+  display: "flex",
+  justifyContent: "center",
+  // borderColor: '#034e95',//This will not override the default color of the border.
+  border: 1,
+  borderStyle: "solid",
+  borderColor: theme.palette.mode === "dark" ? "#fff" : "#034e95",
+  // border: '1px solid background.default',
+  borderRadius: "5px",
+  alignItems: "center",
+  boxSizing: "border-box",
+  marginRight: "15px",
+}));
+
+type Popover = {
+  id: number;
+  isVisible: boolean;
+ 
+};
+
+const Header = () => {
+  const [popovers, setPopovers] = useState<null |Popover[]>([
+    { id: 1, isVisible: false },
+    { id: 2, isVisible: false},
+    { id: 3, isVisible: false },
+  ]);
+  const handleMenuClick = (popoverId: number, event: React.MouseEvent<HTMLButtonElement>) => {
+    const updatedPopovers = popovers?.map((popover) =>
+      popover.id === popoverId
+        ? {
+            ...popover,
+            isVisible: !popover.isVisible,
+          }
+        : popover
+    );
+    if(updatedPopovers) setPopovers(updatedPopovers)
+  
+  };
+
+
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  const [anchorEl1, setAnchorEl1] = React.useState<null | HTMLElement>(null);
+  const [anchorEl2, setAnchorEl2] = React.useState<null | HTMLElement>(null);
+
+  const openPopupLanguage = Boolean(popovers);
+  const openPopupLanguage1 = Boolean(anchorEl1);
+  const openPopupLanguage2 = Boolean(anchorEl2);
+
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClick1 = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setAnchorEl1(event.currentTarget);
+  };
+  const handleClick2 = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setAnchorEl2(event.currentTarget);
+  };
+  const handleCloseLanguage = () => {
+    setAnchorEl(null);
+  };
+  const handleCloseLanguage1 = () => {
+    setAnchorEl1(null);
+    
+  };
+  const handleCloseLanguage2 = () => {
+    setAnchorEl2(null);
+  };
+  const { i18n } = useTranslation(["home", "report"]);
+  const theme = useTheme();
+  // const colorMode = useContext(ColorModeContext);
+  const [open, setOpen] = useState(false);
+  const [open1, setOpen1] = useState(false);
+  const [open2, setOpen2] = useState(false);
+  
+  const handleClose = () => {
+    setOpen(false);
+  };
+  const changeLanguage = (lng: "EN" | "VI") => {
+    i18n.changeLanguage(lng);
+    handleCloseLanguage();
+  };
+  const Android12Switch = styled(Switch)(({ theme }) => ({
+    padding: 8,
+    '& .MuiSwitch-track': {
+      borderRadius: 22 / 2,
+      '&:before, &:after': {
+        content: '""',
+        position: 'absolute',
+        top: '50%',
+        transform: 'translateY(-50%)',
+        width: 16,
+        height: 16,
+      },
+      '&:before': {
+        backgroundImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 24 24"><path fill="${encodeURIComponent(
+          theme.palette.getContrastText(theme.palette.primary.main),
+        )}" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"/></svg>')`,
+        left: 12,
+      },
+      '&:after': {
+        backgroundImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 24 24"><path fill="${encodeURIComponent(
+          theme.palette.getContrastText(theme.palette.primary.main),
+        )}" d="M19,13H5V11H19V13Z" /></svg>')`,
+        right: 12,
+      },
+    },
+    '& .MuiSwitch-thumb': {
+      boxShadow: 'none',
+      width: 16,
+      height: 16,
+      margin: 2,
+    },
+  }));
+  return (
+    <Box component="header"  
+      className="fpts-header" id="header-fpts"
+    >
+       <div className="header-left">
+        <Link to="/" className="text-fontLogo font-bold italic">
+          <span>Ez</span>
+          <span className="text-colorTextLogo">Trade</span>
+        </Link>
+        </div>
+        <ListMenu />
+     
+     
+      <Box className="header-right" display="flex">
+        <div className="group inline-block py-1  px-2">
+          <span className="  uppercase text-sm">
+            <a href="/">
+              <img
+                className="mt-[6px] w-[18px]"
+                src= {exchangeImage}
+                alt="Giao dịch chứng khoán phát sinh"
+              />
+            </a>
+          </span>
+          <ul className="absolute hidden text-gray-700 pt-2 group-hover:block"></ul>
+        </div>
+        <Box>
+          <Tooltip title="Truy cập dịch vụ">
+            <IconButton
+              id="basic-button"
+              aria-controls={open ? "basic-menu" : undefined}
+              aria-haspopup="true"
+              aria-expanded={open ? "true" : undefined}
+              onClick={(event) => handleMenuClick(1, event)}
+            >
+              <img
+                className=""
+                width={20}
+                src={menuImage}
+                alt=""
+              />
+            </IconButton>
+          </Tooltip>
+          <Popover 
+            id="basic-menu"
+          
+            open={openPopupLanguage}
+            onClose={handleCloseLanguage}
+            anchorOrigin={{
+              vertical: 'bottom',
+              horizontal: 'left',
+            }}
+          >
+            <Box className="ezfu-ServiceBox">
+            <div className="fptstriangle"></div>
+            <div id="selectSrvdiv" className="gb_srv" style={{top: '-10px', right: '177px', left: 'unset'}} />
+              {/* <Box>
+                <div className="grid pr-[20px]">
+                  <a
+                    className="border-bottom-menu1 p-3 listmenu-item size-li	"
+                    href=""
+                  >
+                    Giao dịch CK cơ sở
+                  </a>
+                  <a className="p-3 listmenu-item size-li	" href="">
+                    Giao dịch CK phát sinh
+                  </a>
+                  <a className="p-3 listmenu-item size-li	" href="">
+                    Đặt lệnh điều kiện
+                  </a>
+                  <a className="p-3 listmenu-item size-li	" href="">
+                    Thực hiện quyền
+                  </a>
+                  <a className="pl-4 pt-3 hover:text-[#034e95] size-li	" href="">
+                    Lưu ký chứng khoán
+                  </a>
+                </div>
+              </Box>
+              <Box>
+                <div className="grid pr-[20px]">
+                  <a className="p-3 listmenu-item size-li	" href="#">
+                    Ứng trước cổ tức
+                  </a>
+                  <a className="p-3 listmenu-item size-li	" href="#">
+                    Cầm cố chứng khoán
+                  </a>
+                  <a className="p-3 listmenu-item size-li	" href="#">
+                    Quản lí hợp đồng quỹ
+                  </a>
+                  <a className="p-3 listmenu-item size-li	" href="#">
+                    Quản lí tài sản
+                  </a>
+                  <a className="p-3 listmenu-item size-li	" href="#">
+                    Tra cứu phí lưu ký
+                  </a>
+                  <a
+                    className="pl-4 pt-3 hover:text-[#034e95] size-li	 "
+                    href="#"
+                  >
+                    Tra cứu chính quyền
+                  </a>
+                </div>
+              </Box>
+              <Box>
+                <div className="grid ">
+                  <a className="p-3 listmenu-item size-li	" href="#">
+                    Chuyền tiền ngân hàng
+                  </a>
+                  <a className="p-3 listmenu-item size-li	" href="#">
+                    Chuyền tiền quỹ CKPS
+                  </a>
+                  <a className="p-3 listmenu-item size-li	" href="#">
+                    Bảng giá chứng khoán
+                  </a>
+                  <a className="p-3 listmenu-item size-li	" href="#">
+                    Bảng giá HNXPro
+                  </a>
+                  <a className="p-3 listmenu-item size-li	" href="#">
+                    Biểu đồ kĩ thuật
+                  </a>
+                  <a
+                    className="pl-4 pt-3 hover:text-[#034e95] size-li	"
+                    href="#"
+                  >
+                    Thông tin doanh nghiệp
+                  </a>
+                </div>
+              </Box> */}
+  <div className="flex service__col">
+        <div className="px-4 w-2/6 list_menu_right">
+          <ul>
+            <li className="forgiaodichchungkhoan" >
+              <a href="https://eztrade.fpts.com.vn" target="_blank" style={{color: 'black'}}>Giao dịch CK cơ sở</a>
+            </li>
+            <li >
+              <a href="https://ezfutures.fpts.com.vn" target="_blank" style={{color: 'black'}}>Giao dịch CK phái sinh</a>
+            </li>
+            <li className="fordattruoclenhmuaban" >
+              <a href="/stoploss/orderform" target="_blank" style={{color: 'black'}}>Đặt lệnh điều kiện</a>
+            </li>
+            <li className="forthuchienquyen" >
+              <a href="/rightscustody/OverView" target="_blank" style={{color: 'black'}}>Thực hiện quyền</a>
+            </li>
+            <li className="forluukytructuyen">
+              <a href="/rightscustody/CustodyOrderForm" target="_blank" style={{color: 'black'}}>Lưu ký chứng khoán</a>
+            </li>
+          </ul>
+        </div>
+        <div className="px-4 w-2/6 list_menu_right">
+          <ul>
+            <li className="no_logo" >
+              <a href="/rightscustody/AdvanceOrderForm" target="_blank" style={{color: 'black'}}>Ứng trước cổ tức</a>
+            </li>
+            <li className="forgiaodichchungkhoan" >
+              <a href="/margin/Mortgage" target="_blank" style={{color: 'black'}}>Cầm cố chứng khoán</a>
+            </li>
+            <li className="forquanlygiaodichkyquy" >
+              <a href="/margin/Report" target="_blank" style={{color: 'black'}}>Quản lý HĐ Ký quỹ</a>
+            </li>
+            <li className="forgiaodichchungkhoan" >
+              <a href="/report/AssetReport2" target="_blank" style={{color: 'black'}}>Quản lý tài sản</a>
+            </li>
+            <li className="forluukytructuyen" >
+              <a href="/rightscustody/DepositoryHistory" target="_blank" style={{color: 'black'}}>Tra cứu phí lưu ký</a>
+            </li>
+            <li className="forgiaodichchungkhoan" >
+              <a href="/report/ReportCW" target="_blank" style={{color: 'black'}}>Tra cứu chứng quyền</a>
+            </li>
+          </ul>
+        </div>
+        <div className="px-4 w-2/6 list_menu_right">
+          <ul>
+            <li className="forchuyentien" >
+              <a href="/transfer" target="_blank" style={{color: 'black'}}>Chuyển tiền ngân hàng</a>
+            </li>
+            <li className="forchuyentien" >
+              <a href="/transfer/home/transferds" target="_blank" style={{color: 'black'}}>Chuyển tiền ký quỹ CKPS</a>
+            </li>
+            <li >
+              <a href="https://liveprice.fpts.com.vn" target="_blank" style={{color: 'black'}}>Bảng giá chứng khoán</a>
+            </li>
+            <li>
+              <a href="https://liveprice.fpts.com.vn/hnxpro" target="_blank" style={{color: 'black'}}>Bảng giá HNXPro</a>
+            </li>
+            <li >
+              <a href="https://ezfutures.fpts.com.vn/chart3" target="_blank" style={{color: 'black'}}>Biểu đồ kĩ thuật</a>
+            </li>
+            <li className="forthongtindoanhnghiep" >
+              <a href="http://ezsearch.fpts.com.vn/Services/" target="_blank" style={{color: 'black'}}>Thông tin doanh nghiệp</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+            </Box>
+          </Popover>
+        </Box>
+
+        <Box>
+          <Tooltip title="Thông báo">
+            <IconButton
+              id="basic-button"
+              aria-controls={open1 ? "basic-menu1" : undefined}
+              aria-haspopup="true"
+              aria-expanded={open1 ? "true" : undefined}
+              onClick={handleClick1}
+            >
+              <NotificationsIcon sx={{ color: "#0861a9", width: "22" }} />
+            </IconButton>
+          </Tooltip>
+          <Popover
+            id="basic-menu1"
+            anchorEl={anchorEl1}
+            open={openPopupLanguage1}
+            onClose={handleCloseLanguage1}
+            anchorOrigin={{
+              vertical: 'bottom',
+              horizontal: 'left',
+            }}
+          
+          >
+      
+            {/* <Box className="border-Notification flex justify-between">
+              <Box>
+                <Typography padding={1} >
+                 <p className="size-input">Thông báo</p> 
+                  </Typography>
+              </Box>
+              <Box>
+                <Typography padding={1}>
+                  <div className="flex justify-center">
+                    <p className="mr-[20px] size-input">Bật/tắt thông báo</p>
+                    <p className="mt-[-10px]">  <FormControlLabel
+                  control={<Android12Switch defaultChecked />} label={undefined}                   
+                  /></p>
+                  </div>
+                </Typography>
+             
+              </Box>
+              </Box>
+              <div className="notification__content">
+          <div className="content__area scrollable__area" id="scrollpagination">
+            <ul id="contentLoader"><li><div className="anchorContainer"><div className="content__loadmore"><div className="img__content__lfloat"><img src="/images/notification/icon_investment_report_gray.svg" /></div><div className="content__detail"><div className="con__detail__title"><span className="content__detail__title">Báo cáo phân tích kỹ thuật mã TLH<span /></span></div><div className="content__detail__content content__detail__content__short"><span className="con__detail__con contentLangS">FPTS xin gửi tới khách hàng Báo cáo phân tích kỹ thuật mã TLH</span><span className="con__detail__con contentLangM" style={{display: 'none'}}>FPTS xin gửi tới khách hàng Báo cáo phân tích kỹ thuật mã TLH</span></div></div></div><div className="content__timestamp"><div className="content__loaddetails" id="contentLoadMore"><a href="https://ezadvisorselect.fpts.com.vn/InvestmentAdvisoryReport/InvestmentAdvisoryReportDetail?idRp=29-MAR-2023%2020:07:32.259394000" target="_blank"><img src="/images/arrow_right-512.png" /></a></div><span className="timer" title="30/3/2023 7:37">6 giờ</span></div></div></li><li><div className="anchorContainer"><div className="content__loadmore"><div className="img__content__lfloat"><img src="/images/notification/other_notification.png" /></div><div className="content__detail"><div className="con__detail__title"><span className="content__detail__title">Bản tin chứng khoán<span /></span></div><div className="content__detail__content content__detail__content__short"><span className="con__detail__con contentLangS">FPTS xin gửi tới quý khách hàng Bản tin chứng khoán ngày 29/03/2023</span><span className="con__detail__con contentLangM" style={{display: 'none'}}>FPTS xin gửi tới quý khách hàng Bản tin chứng khoán ngày 29/03/2023</span></div></div></div><div className="content__timestamp"><div className="content__loaddetails" id="contentLoadMore"><a href="http://file.fpts.com.vn/FileStore2/File/2023/03/29/FIA20230329_be974c65.pdf" target="_blank"><img src="/images/arrow_right-512.png" /></a></div><span className="timer" title="29/3/2023 17:05">21 giờ</span></div></div></li><li><div className="anchorContainer"><div className="content__loadmore"><div className="img__content__lfloat"><img src="/images/notification/other_notification.png" /></div><div className="content__detail"><div className="con__detail__title"><span className="content__detail__title">Bản tin chứng khoán<span /></span></div><div className="content__detail__content content__detail__content__short"><span className="con__detail__con contentLangS">FPTS xin gửi tới quý khách hàng bản tin chứng khoán ngày 28/03/2023</span><span className="con__detail__con contentLangM" style={{display: 'none'}}>FPTS xin gửi tới quý khách hàng bản tin chứng khoán ngày 28/03/2023</span></div></div></div><div className="content__timestamp"><div className="content__loaddetails" id="contentLoadMore"><a href="http://file.fpts.com.vn/FileStore2/File/2023/03/28/FIA20230328_ca59af02.pdf" target="_blank"><img src="/images/arrow_right-512.png" /></a></div><span className="timer" title="28/3/2023 17:17">1 ngày</span></div></div></li><li><div className="anchorContainer"><div className="content__loadmore"><div className="img__content__lfloat"><img src="/images/notification/icon_investment_report_gray.svg" /></div><div className="content__detail"><div className="con__detail__title"><span className="content__detail__title">Báo cáo phân tích kỹ thuật mã IDC<span /></span></div><div className="content__detail__content content__detail__content__short"><span className="con__detail__con contentLangS">FPTS xin gửi tới khách hàng Báo cáo phân tích kỹ thuật mã IDC</span><span className="con__detail__con contentLangM" style={{display: 'none'}}>FPTS xin gửi tới khách hàng Báo cáo phân tích kỹ thuật mã IDC</span></div></div></div><div className="content__timestamp"><div className="content__loaddetails" id="contentLoadMore"><a href="https://ezadvisorselect.fpts.com.vn/InvestmentAdvisoryReport/InvestmentAdvisoryReportDetail?idRp=27-MAR-2023%2020:45:50.208477000" target="_blank"><img src="/images/arrow_right-512.png" /></a></div><span className="timer" title="28/3/2023 7:30">2 ngày</span></div></div></li><li><div className="anchorContainer"><div className="content__loadmore"><div className="img__content__lfloat"><img src="/images/notification/icon_investment_report_gray.svg" /></div><div className="content__detail"><div className="con__detail__title"><span className="content__detail__title">Báo cáo phân tích kỹ thuật mã VCG<span /></span></div><div className="content__detail__content content__detail__content__short"><span className="con__detail__con contentLangS">FPTS xin gửi tới khách hàng Báo cáo phân tích kỹ thuật mã VCG</span><span className="con__detail__con contentLangM" style={{display: 'none'}}>FPTS xin gửi tới khách hàng Báo cáo phân tích kỹ thuật mã VCG</span></div></div></div><div className="content__timestamp"><div className="content__loaddetails" id="contentLoadMore"><a href="https://ezadvisorselect.fpts.com.vn/InvestmentAdvisoryReport/InvestmentAdvisoryReportDetail?idRp=27-MAR-2023%2021:41:50.031253000" target="_blank"><img src="/images/arrow_right-512.png" /></a></div><span className="timer" title="28/3/2023 7:30">2 ngày</span></div></div></li><li><div className="anchorContainer"><div className="content__loadmore"><div className="img__content__lfloat"><img src="/images/notification/other_notification.png" /></div><div className="content__detail"><div className="con__detail__title"><span className="content__detail__title">Bản tin chứng khoán<span /></span></div><div className="content__detail__content content__detail__content__short"><span className="con__detail__con contentLangS">FPTS xin gửi tới quý khách hàng bản tin chứng khoán ngày 27/03/2023</span><span className="con__detail__con contentLangM" style={{display: 'none'}}>FPTS xin gửi tới quý khách hàng bản tin chứng khoán ngày 27/03/2023</span></div></div></div><div className="content__timestamp"><div className="content__loaddetails" id="contentLoadMore"><a href="http://file.fpts.com.vn/FileStore2/File/2023/03/27/FIA20230327_c9be9a2b.pdf" target="_blank"><img src="/images/arrow_right-512.png" /></a></div><span className="timer" title="27/3/2023 17:36">2 ngày</span></div></div></li><li><div className="anchorContainer"><div className="content__loadmore"><div className="img__content__lfloat"><img src="/images/notification/other_notification.png" /></div><div className="content__detail"><div className="con__detail__title"><span className="content__detail__title">Hội thảo Triển vọng và Chiến lược đầu tư 2023<span /></span></div><div className="content__detail__content content__detail__content__short"><span className="con__detail__con contentLangS">FPTS xin gửi tới khách hàng link tham dự hội thảo trực tuyến Triển vọng và Chiến lược đầu tư 2023</span><span className="con__detail__con contentLangM" style={{display: 'none'}}>FPTS xin gửi tới khách hàng link tham dự hội thảo trực tuyến Triển vọng và Chiến lược đầu tư 2023</span></div></div></div><div className="content__timestamp"><div className="content__loaddetails" id="contentLoadMore"><a href="https://us06web.zoom.us/j/81213947166?pwd=RjZOeGRMcVV4QWN6OUR1THZ1UTBVQT09" target="_blank"><img src="/images/arrow_right-512.png" /></a></div><span className="timer" title="25/3/2023 8:41">5 ngày</span></div></div></li><li><div className="anchorContainer"><div className="content__loadmore"><div className="img__content__lfloat"><img src="/images/notification/icon_investment_report_gray.svg" /></div><div className="content__detail"><div className="con__detail__title"><span className="content__detail__title">Báo cáo phân tích kỹ thuật mã IJC<span /></span></div><div className="content__detail__content content__detail__content__short"><span className="con__detail__con contentLangS">FPTS xin gửi tới khách hàng Báo cáo phân tích kỹ thuật mã IJC.</span><span className="con__detail__con contentLangM" style={{display: 'none'}}>FPTS xin gửi tới khách hàng Báo cáo phân tích kỹ thuật mã IJC.</span></div></div></div><div className="content__timestamp"><div className="content__loaddetails" id="contentLoadMore"><a href="https://ezadvisorselect.fpts.com.vn/InvestmentAdvisoryReport/InvestmentAdvisoryReportDetail?idRp=24-MAR-2023%2017:33:45.846774000" target="_blank"><img src="/images/arrow_right-512.png" /></a></div><span className="timer" title="24/3/2023 17:57">5 ngày</span></div></div></li><li><div className="anchorContainer"><div className="content__loadmore"><div className="img__content__lfloat"><img src="/images/notification/other_notification.png" /></div><div className="content__detail"><div className="con__detail__title"><span className="content__detail__title">Bản tin chứng khoán<span /></span></div><div className="content__detail__content content__detail__content__short"><span className="con__detail__con contentLangS">FPTS xin gửi tới quý khách hàng bản tin chứng khoán ngày 24/03/2023</span><span className="con__detail__con contentLangM" style={{display: 'none'}}>FPTS xin gửi tới quý khách hàng bản tin chứng khoán ngày 24/03/2023</span></div></div></div><div className="content__timestamp"><div className="content__loaddetails" id="contentLoadMore"><a href="http://file.fpts.com.vn/FileStore2/File/2023/03/24/FIA20230324_3ee0601a.pdf" target="_blank"><img src="/images/arrow_right-512.png" /></a></div><span className="timer" title="24/3/2023 17:30">5 ngày</span></div></div></li><li><div className="anchorContainer"><div className="content__loadmore"><div className="img__content__lfloat"><img src="/images/notification/other_notification.png" /></div><div className="content__detail"><div className="con__detail__title"><span className="content__detail__title">Livestream Hội thảo "Triển vọng đầu tư cổ phiếu Dầu khí" - 26.03.2023<span /></span></div><div className="content__detail__content content__detail__content__short"><span className="con__detail__con contentLangS">FPTS kính mời Quý khách tham dự Livestream Hội thảo “Triển vọng đầu tư cổ phiếu Dầu khí: Cơ hội từ đơn giá dịch vụ cao và đón đầu đại dự án lớn chuẩn bị khởi công” trên Youtube vào lúc 8h30 – Chủ Nhật (26.03.2023). Quý khách vui lòng nhấn vào đường dẫn bên cạnh để tham dự buổi thuyết trình.</span><span className="con__detail__con contentLangM" style={{display: 'none'}}>FPTS kính mời Quý khách tham dự Livestream Hội thảo “Triển vọng đầu tư cổ phiếu Dầu khí: Cơ hội từ đơn giá dịch vụ cao và đón đầu đại dự án lớn chuẩn bị khởi công” trên Youtube vào lúc 8h30 – Chủ Nhật (26.03.2023). Quý khách vui lòng nhấn vào đường dẫn bên cạnh để tham dự buổi thuyết trình.</span></div></div></div><div className="content__timestamp"><div className="content__loaddetails" id="contentLoadMore"><a href="https://www.youtube.com/watch?v=rB6fGNeDeys" target="_blank"><img src="/images/arrow_right-512.png" /></a></div><span className="timer" title="24/3/2023 14:04">6 ngày</span></div></div></li></ul>
+            <div id="loading" style={{display: 'none', textAlign: 'center'}}>
+              <img src="/images/Loadinggif.gif" style={{width: '32px', height: '32px'}} />
+            </div>
+          </div>
+        </div>
+         
+            </Box> */}
+              <div className="notification__togglelyout" id="notiLayoutToggle" style={{display: 'block',width:410,height:500}}>
+        <div id="selectSrvdiv" className="gb_srv" style={{top: '-10px', right: '137px', left: 'unset'}} />
+        <div className="clearfix" />
+        <div className="notification__togglelyout__header">
+          <div className="clearfix noti__header h-10">
+            <div className="rfloat">
+              <div className="header__action__floatR">
+              </div>
+            </div>
+            <div className="flex justify-between ">
+              <h4 className="header__title mt-1.5 mb-2.5 float-left font-semibold" aria-hidden="true">Thông báo</h4>
+              <div className="btn__switchNoti mt-1.5 mb-2.5 font-semibold float-right">
+                <div className="groupSwitch">
+                  <span>Bật/tắt thông báo: </span>
+                  <label className="switch switchNoti" id="switchLabel">
+                    <input type="checkbox" id="ckNotification" />
+                    <span className="slider round" id="spnNoti">
+                      <span className="on">Bật</span>
+                      <span className="off">Tắt</span>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="notification__content">
+          <div className="content__area scrollable__area" id="scrollpagination">
+            <ul id="contentLoader"><li><div className="anchorContainer"><div className="content__loadmore"><div className="img__content__lfloat"><img src="/images/notification/icon_investment_report_gray.svg" /></div><div className="content__detail"><div className="con__detail__title"><span className="content__detail__title">Báo cáo phân tích kỹ thuật mã TLH<span /></span></div><div className="content__detail__content content__detail__content__short"><span className="con__detail__con contentLangS">FPTS xin gửi tới khách hàng Báo cáo phân tích kỹ thuật mã TLH</span><span className="con__detail__con contentLangM" style={{display: 'none'}}>FPTS xin gửi tới khách hàng Báo cáo phân tích kỹ thuật mã TLH</span></div></div></div><div className="content__timestamp"><div className="content__loaddetails" id="contentLoadMore"><a href="https://ezadvisorselect.fpts.com.vn/InvestmentAdvisoryReport/InvestmentAdvisoryReportDetail?idRp=29-MAR-2023%2020:07:32.259394000" target="_blank"><img src="/images/arrow_right-512.png" /></a></div><span className="timer" title="30/3/2023 7:37">6 giờ</span></div></div></li><li><div className="anchorContainer"><div className="content__loadmore"><div className="img__content__lfloat"><img src="/images/notification/other_notification.png" /></div><div className="content__detail"><div className="con__detail__title"><span className="content__detail__title">Bản tin chứng khoán<span /></span></div><div className="content__detail__content content__detail__content__short"><span className="con__detail__con contentLangS">FPTS xin gửi tới quý khách hàng Bản tin chứng khoán ngày 29/03/2023</span><span className="con__detail__con contentLangM" style={{display: 'none'}}>FPTS xin gửi tới quý khách hàng Bản tin chứng khoán ngày 29/03/2023</span></div></div></div><div className="content__timestamp"><div className="content__loaddetails" id="contentLoadMore"><a href="http://file.fpts.com.vn/FileStore2/File/2023/03/29/FIA20230329_be974c65.pdf" target="_blank"><img src="/images/arrow_right-512.png" /></a></div><span className="timer" title="29/3/2023 17:05">21 giờ</span></div></div></li><li><div className="anchorContainer"><div className="content__loadmore"><div className="img__content__lfloat"><img src="/images/notification/other_notification.png" /></div><div className="content__detail"><div className="con__detail__title"><span className="content__detail__title">Bản tin chứng khoán<span /></span></div><div className="content__detail__content content__detail__content__short"><span className="con__detail__con contentLangS">FPTS xin gửi tới quý khách hàng bản tin chứng khoán ngày 28/03/2023</span><span className="con__detail__con contentLangM" style={{display: 'none'}}>FPTS xin gửi tới quý khách hàng bản tin chứng khoán ngày 28/03/2023</span></div></div></div><div className="content__timestamp"><div className="content__loaddetails" id="contentLoadMore"><a href="http://file.fpts.com.vn/FileStore2/File/2023/03/28/FIA20230328_ca59af02.pdf" target="_blank"><img src="/images/arrow_right-512.png" /></a></div><span className="timer" title="28/3/2023 17:17">1 ngày</span></div></div></li><li><div className="anchorContainer"><div className="content__loadmore"><div className="img__content__lfloat"><img src="/images/notification/icon_investment_report_gray.svg" /></div><div className="content__detail"><div className="con__detail__title"><span className="content__detail__title">Báo cáo phân tích kỹ thuật mã IDC<span /></span></div><div className="content__detail__content content__detail__content__short"><span className="con__detail__con contentLangS">FPTS xin gửi tới khách hàng Báo cáo phân tích kỹ thuật mã IDC</span><span className="con__detail__con contentLangM" style={{display: 'none'}}>FPTS xin gửi tới khách hàng Báo cáo phân tích kỹ thuật mã IDC</span></div></div></div><div className="content__timestamp"><div className="content__loaddetails" id="contentLoadMore"><a href="https://ezadvisorselect.fpts.com.vn/InvestmentAdvisoryReport/InvestmentAdvisoryReportDetail?idRp=27-MAR-2023%2020:45:50.208477000" target="_blank"><img src="/images/arrow_right-512.png" /></a></div><span className="timer" title="28/3/2023 7:30">2 ngày</span></div></div></li><li><div className="anchorContainer"><div className="content__loadmore"><div className="img__content__lfloat"><img src="/images/notification/icon_investment_report_gray.svg" /></div><div className="content__detail"><div className="con__detail__title"><span className="content__detail__title">Báo cáo phân tích kỹ thuật mã VCG<span /></span></div><div className="content__detail__content content__detail__content__short"><span className="con__detail__con contentLangS">FPTS xin gửi tới khách hàng Báo cáo phân tích kỹ thuật mã VCG</span><span className="con__detail__con contentLangM" style={{display: 'none'}}>FPTS xin gửi tới khách hàng Báo cáo phân tích kỹ thuật mã VCG</span></div></div></div><div className="content__timestamp"><div className="content__loaddetails" id="contentLoadMore"><a href="https://ezadvisorselect.fpts.com.vn/InvestmentAdvisoryReport/InvestmentAdvisoryReportDetail?idRp=27-MAR-2023%2021:41:50.031253000" target="_blank"><img src="/images/arrow_right-512.png" /></a></div><span className="timer" title="28/3/2023 7:30">2 ngày</span></div></div></li><li><div className="anchorContainer"><div className="content__loadmore"><div className="img__content__lfloat"><img src="/images/notification/other_notification.png" /></div><div className="content__detail"><div className="con__detail__title"><span className="content__detail__title">Bản tin chứng khoán<span /></span></div><div className="content__detail__content content__detail__content__short"><span className="con__detail__con contentLangS">FPTS xin gửi tới quý khách hàng bản tin chứng khoán ngày 27/03/2023</span><span className="con__detail__con contentLangM" style={{display: 'none'}}>FPTS xin gửi tới quý khách hàng bản tin chứng khoán ngày 27/03/2023</span></div></div></div><div className="content__timestamp"><div className="content__loaddetails" id="contentLoadMore"><a href="http://file.fpts.com.vn/FileStore2/File/2023/03/27/FIA20230327_c9be9a2b.pdf" target="_blank"><img src="/images/arrow_right-512.png" /></a></div><span className="timer" title="27/3/2023 17:36">2 ngày</span></div></div></li><li><div className="anchorContainer"><div className="content__loadmore"><div className="img__content__lfloat"><img src="/images/notification/other_notification.png" /></div><div className="content__detail"><div className="con__detail__title"><span className="content__detail__title">Hội thảo Triển vọng và Chiến lược đầu tư 2023<span /></span></div><div className="content__detail__content content__detail__content__short"><span className="con__detail__con contentLangS">FPTS xin gửi tới khách hàng link tham dự hội thảo trực tuyến Triển vọng và Chiến lược đầu tư 2023</span><span className="con__detail__con contentLangM" style={{display: 'none'}}>FPTS xin gửi tới khách hàng link tham dự hội thảo trực tuyến Triển vọng và Chiến lược đầu tư 2023</span></div></div></div><div className="content__timestamp"><div className="content__loaddetails" id="contentLoadMore"><a href="https://us06web.zoom.us/j/81213947166?pwd=RjZOeGRMcVV4QWN6OUR1THZ1UTBVQT09" target="_blank"><img src="/images/arrow_right-512.png" /></a></div><span className="timer" title="25/3/2023 8:41">5 ngày</span></div></div></li><li><div className="anchorContainer"><div className="content__loadmore"><div className="img__content__lfloat"><img src="/images/notification/icon_investment_report_gray.svg" /></div><div className="content__detail"><div className="con__detail__title"><span className="content__detail__title">Báo cáo phân tích kỹ thuật mã IJC<span /></span></div><div className="content__detail__content content__detail__content__short"><span className="con__detail__con contentLangS">FPTS xin gửi tới khách hàng Báo cáo phân tích kỹ thuật mã IJC.</span><span className="con__detail__con contentLangM" style={{display: 'none'}}>FPTS xin gửi tới khách hàng Báo cáo phân tích kỹ thuật mã IJC.</span></div></div></div><div className="content__timestamp"><div className="content__loaddetails" id="contentLoadMore"><a href="https://ezadvisorselect.fpts.com.vn/InvestmentAdvisoryReport/InvestmentAdvisoryReportDetail?idRp=24-MAR-2023%2017:33:45.846774000" target="_blank"><img src="/images/arrow_right-512.png" /></a></div><span className="timer" title="24/3/2023 17:57">5 ngày</span></div></div></li><li><div className="anchorContainer"><div className="content__loadmore"><div className="img__content__lfloat"><img src="/images/notification/other_notification.png" /></div><div className="content__detail"><div className="con__detail__title"><span className="content__detail__title">Bản tin chứng khoán<span /></span></div><div className="content__detail__content content__detail__content__short"><span className="con__detail__con contentLangS">FPTS xin gửi tới quý khách hàng bản tin chứng khoán ngày 24/03/2023</span><span className="con__detail__con contentLangM" style={{display: 'none'}}>FPTS xin gửi tới quý khách hàng bản tin chứng khoán ngày 24/03/2023</span></div></div></div><div className="content__timestamp"><div className="content__loaddetails" id="contentLoadMore"><a href="http://file.fpts.com.vn/FileStore2/File/2023/03/24/FIA20230324_3ee0601a.pdf" target="_blank"><img src="/images/arrow_right-512.png" /></a></div><span className="timer" title="24/3/2023 17:30">5 ngày</span></div></div></li><li><div className="anchorContainer"><div className="content__loadmore"><div className="img__content__lfloat"><img src="/images/notification/other_notification.png" /></div><div className="content__detail"><div className="con__detail__title"><span className="content__detail__title">Livestream Hội thảo "Triển vọng đầu tư cổ phiếu Dầu khí" - 26.03.2023<span /></span></div><div className="content__detail__content content__detail__content__short"><span className="con__detail__con contentLangS">FPTS kính mời Quý khách tham dự Livestream Hội thảo “Triển vọng đầu tư cổ phiếu Dầu khí: Cơ hội từ đơn giá dịch vụ cao và đón đầu đại dự án lớn chuẩn bị khởi công” trên Youtube vào lúc 8h30 – Chủ Nhật (26.03.2023). Quý khách vui lòng nhấn vào đường dẫn bên cạnh để tham dự buổi thuyết trình.</span><span className="con__detail__con contentLangM" style={{display: 'none'}}>FPTS kính mời Quý khách tham dự Livestream Hội thảo “Triển vọng đầu tư cổ phiếu Dầu khí: Cơ hội từ đơn giá dịch vụ cao và đón đầu đại dự án lớn chuẩn bị khởi công” trên Youtube vào lúc 8h30 – Chủ Nhật (26.03.2023). Quý khách vui lòng nhấn vào đường dẫn bên cạnh để tham dự buổi thuyết trình.</span></div></div></div><div className="content__timestamp"><div className="content__loaddetails" id="contentLoadMore"><a href="https://www.youtube.com/watch?v=rB6fGNeDeys" target="_blank"><img src="/images/arrow_right-512.png" /></a></div><span className="timer" title="24/3/2023 14:04">6 ngày</span></div></div></li></ul>
+            <div id="loading" style={{display: 'none', textAlign: 'center'}}>
+              <img src="/images/Loadinggif.gif" style={{width: '32px', height: '32px'}} />
+            </div>
+          </div>
+        </div>
+        <div className="notification__seemore">
+          <a href="/notifications" target="_blank">
+            <span className="seemore__title">Xem tất cả</span>
+          </a>
+        </div>
+      </div>
+          </Popover>
+        </Box>
+        <Box>
+          <Tooltip title="Thông tin chủ tài khoản">
+            <IconButton
+              id="basic-button"
+              aria-controls={open2 ? "basic-menu2" : undefined}
+              aria-haspopup="true"
+              aria-expanded={open2 ? "true" : undefined}
+              onClick={handleClick2}
+            >
+              <div className="text-11pt text-[#2371af]">058C044534</div>
+              <div id="selectSrvdiv" className="gb_srv " style={{ display: anchorEl2 ? "block" : "none" }}></div>
+
+          
+              <ArrowDropDownIcon sx={{ color: "#2371af" }} />
+              
+            </IconButton>
+            
+          </Tooltip>
+          
+          <Menu
+            id="basic-menu2"
+            anchorEl={anchorEl2}
+            open={openPopupLanguage2}
+            onClose={handleCloseLanguage2}
+            MenuListProps={{
+              "aria-labelledby": "basic-button",
+            }}
+            sx={{}}
+          >
+          
+            <Box sx={{ display: "flex", padding: "8px" }}>
+              <img
+                width={100}
+                className="rounded-full pr-2"
+                src="https://eztrade.fpts.com.vn/Content/images/avatar_ano.png"
+                alt=""
+              />
+              
+              <Box>
+                
+                <Typography paddingTop={2}>Nguyễn Xuân Hiệp</Typography>
+                <button className="bg-[#339cdf] btnTTTK">
+                  Thông tin chủ tài khoản
+                </button>
+              </Box>
+            </Box>
+            <Box>
+              <div className="grid">
+                <a className="p-3 listmenu-item size-li	" href="#">
+                  Chuyên Viên Quản lý tài khoản
+                </a>
+                <a className="p-3 listmenu-item size-li	" href="#">
+                  Thay đổi mật khẩu
+                </a>
+                <a className="p-3 listmenu-item size-li	" href="#">
+                  Quản trị Token
+                </a>
+                <a className="p-3 listmenu-item size-li	" href="#">
+                  Hoạt động gần đây
+                </a>
+                <a className="p-3 listmenu-item size-li	" href="#">
+                  Cài đặt mặt khẩu giao dịch
+                </a>
+                <a className="p-3 listmenu-item size-li	" href="#">
+                  Hướng dẫn xóa cache
+                </a>
+                <a className="p-3 listmenu-item size-li	" href="#">
+                  Hỗ trợ ngôn ngữ
+                </a>
+                <a className="pl-4 pt-3 hover:text-[#034e95] size-li	" href="#">
+                  Thoát
+                </a>
+                
+              </div>
+            </Box>
+          </Menu>
+        </Box>
+      </Box>
+    </Box>
+  );
+};
+
+export default Header;
+
+
+
+
+
+<div className="flex ">
+        <div className="group list-sub-menu">
+        {/* <div className={ `group list-sub-menu isActive ? "active" : ""`}> */}
+          <span className="uppercase text-13px ">HNX </span>
+          <ul className="absolute hidden text-black group-hover:block z-40 sub-menu">
+            <li>
+              <NavLink
+                to="/HNX"
+                onClick={() => dispatch(fetchTableHNXAsync())}
+                className="bg-bgListMarketWatch hover:bg-activeListDropMarketWatch py-1.5 px-2.5 text-xs block whitespace-no-wrap border-b border-bdListMarketWatch text-white"
+              >
+                HNX
+              </NavLink>
+              {/* <span className="bg-bgListMarketWatch hover:bg-activeListDropMarketWatch py-1.5 px-2.5 text-xs block whitespace-no-wrap  border-b border-bdListMarketWatch text-white "
+                onClick={() => dispatch(fetchTableHNXAsync())}>HNX</span> */}
+            </li>
+            <li>
+            <NavLink to="/HNX30" className="bg-bgListMarketWatch hover:bg-activeListDropMarketWatch py-1.5 px-2.5 text-xs block whitespace-no-wrap  border-b border-bdListMarketWatch text-white "
+              >HNX30</NavLink>
+            </li>
+            <li>
+            <NavLink to="/BOND"  className="bg-bgListMarketWatch hover:bg-activeListDropMarketWatch py-1.5 px-2.5 text-xs block whitespace-no-wrap  border-b border-bdListMarketWatch text-white "
+                onClick={() => dispatch(fetchTableBONDAsync())}>BOND</NavLink>
+            </li>
+            <li>
+              <Link
+                to="/thoa-thuan-hnx"
+                // onClick={() => dispatch(fetchBasketAsync())}
+                className="bg-bgListMarketWatch hover:bg-activeListDropMarketWatch py-1.5 px-2.5 text-xs block whitespace-no-wrap  border-b border-bdListMarketWatch text-white "
+              >
+                Giao dịch thỏa thuận
+              </Link>
+            </li>
+            {/* <li>
+              <span className="bg-bgListMarketWatch hover:bg-activeListDropMarketWatch py-1.5 px-2.5 text-xs block whitespace-no-wrap  border-b border-bdListMarketWatch text-white "
+                onClick={() => dispatch(fetchTableHSXAsync())}>HSX</span>
+            </li>
+            <li>
+              <span className="bg-bgListMarketWatch hover:bg-activeListDropMarketWatch py-1.5 px-2.5 text-xs block whitespace-no-wrap  border-b border-bdListMarketWatch text-white "
+                onClick={() => dispatch(fetchTableHNXAsync())}>HNX</span>
+            </li> */}
+          </ul>
+        </div>
+
+        <div className="group list-sub-menu">
+          {/* <span className="  uppercase text-13px ">HOSE</span> */}
+          <span className="  uppercase text-13px ">HOSE</span>
+          <ul className="absolute hidden text-gray-700 group-hover:block z-50 sub-menu ">
+            <li>
+              <NavLink
+                to="/VNI"
+                className=" bg-bgListMarketWatch hover:bg-activeListDropMarketWatch  py-1.5 px-2.5 text-xs block whitespace-no-wrap border-b border-bdListMarketWatch text-white"
+              >
+                VNI
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/VN30"
+                className="bg-bgListMarketWatch hover:bg-activeListDropMarketWatch  py-1.5 px-2.5 text-xs block whitespace-no-wrap border-b border-bdListMarketWatch text-white"
+              >
+                VN30
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/BOND"
+                className="bg-bgListMarketWatch hover:bg-activeListDropMarketWatch  py-1.5 px-2.5 text-xs block whitespace-no-wrap border-b border-bdListMarketWatch text-white"
+              >
+                BOND
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/thoa-thuan-hsx"
+                className="bg-bgListMarketWatch hover:bg-activeListDropMarketWatch  py-1.5 px-2.5 text-xs block whitespace-no-wrap border-b border-bdListMarketWatch text-white"
+              >
+              Giao dịch thỏa thuận
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/VNXALL"
+                className=" bg-bgListMarketWatch hover:bg-activeListDropMarketWatch  py-1.5 px-2.5 text-xs block whitespace-no-wrap border-b border-bdListMarketWatch text-white"
+              >
+                VNXALL
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/VN100"
+                className="bg-bgListMarketWatch hover:bg-activeListDropMarketWatch  py-1.5 px-2.5 text-xs block whitespace-no-wrap border-b border-bdListMarketWatch text-white"
+              >
+                VN100
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/VNALL"
+                className="bg-bgListMarketWatch hover:bg-activeListDropMarketWatch  py-1.5 px-2.5 text-xs block whitespace-no-wrap border-b border-bdListMarketWatch text-white"
+              >
+                VNALL
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/VNMID"
+                className="bg-bgListMarketWatch hover:bg-activeListDropMarketWatch  py-1.5 px-2.5 text-xs block whitespace-no-wrap border-b border-bdListMarketWatch text-white"
+              >
+              VNMID
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/VNSML"
+                className="bg-bgListMarketWatch hover:bg-activeListDropMarketWatch  py-1.5 px-2.5 text-xs block whitespace-no-wrap border-b border-bdListMarketWatch text-white"
+              >
+            VNSML
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+        <div className="group list-sub-menu">
+          <span className="  uppercase text-13px ">UPCOM</span>
+          <ul className="absolute hidden text-gray-700 group-hover:block z-50 sub-menu">
+            <li>
+              <Link
+                to="/UPCOM"
+                className=" bg-bgListMarketWatch hover:bg-activeListDropMarketWatch  py-1.5 px-2.5 text-xs block whitespace-no-wrap border-b border-bdListMarketWatch text-white"
+              >
+                UPCOM
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/thoa-thuan-upcom"
+                className="bg-bgListMarketWatch hover:bg-activeListDropMarketWatch  py-1.5 px-2.5 text-xs block whitespace-no-wrap text-white"
+              >
+                  Giao dịch thỏa thuận
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="group list-sub-menu">
+          <span className="text-13px ">Ngành</span>
+          <ul className="absolute hidden text-gray-70 group-hover:block z-50 sub-menu">
+            <li>
+              <Link
+                to="/marketwatch-hsx"
+                className=" bg-bgListMarketWatch hover:bg-activeListDropMarketWatch  py-1.5 px-2.5 text-xs block whitespace-no-wrap border-b border-bdListMarketWatch text-white"
+              >
+                VNI
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/marketwatch-vn30"
+                className="bg-bgListMarketWatch hover:bg-activeListDropMarketWatch  py-1.5 px-2.5 text-xs block whitespace-no-wrap text-white"
+              >
+                VN30
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="group list-sub-menu">
+          <span className="text-13px ">Thống kê</span>
+          <ul className="absolute hidden text-gray-700 group-hover:block z-50 sub-menu">
+            <li>
+              <Link
+                to="/marketwatch-hsx"
+                className=" bg-bgListMarketWatch hover:bg-activeListDropMarketWatch  py-1.5 px-2.5 text-xs block whitespace-no-wrap border-b border-bdListMarketWatch text-white"
+              >
+                VNI
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/marketwatch-vn30"
+                className="bg-bgListMarketWatch hover:bg-activeListDropMarketWatch  py-1.5 px-2.5 text-xs block whitespace-no-wrap text-white"
+              >
+                VN30
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="group list-sub-menu">
+          <span className="text-13px ">Chứng quyền</span>
+          <ul className="absolute hidden text-gray-700 group-hover:block z-50 sub-menu">
+            <li>
+              <Link
+                to="/marketwatch-hsx"
+                className=" bg-bgListMarketWatch hover:bg-activeListDropMarketWatch  py-1.5 px-2.5 text-xs block whitespace-no-wrap border-b border-bdListMarketWatch text-white"
+              >
+                VNI
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/marketwatch-vn30"
+                className="bg-bgListMarketWatch hover:bg-activeListDropMarketWatch  py-1.5 px-2.5 text-xs block whitespace-no-wrap text-white"
+              >
+                VN30
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="group list-sub-menu">
+          <span className="text-13px ">Danh mục</span>
+          <ul className="absolute hidden text-gray-700 group-hover:block z-50  sub-menu">
+            <li>
+              <Link
+                to="/marketwatch-hsx"
+                className=" bg-bgListMarketWatch hover:bg-activeListDropMarketWatch  py-1.5 px-2.5 text-xs block whitespace-no-wrap border-b border-bdListMarketWatch text-white"
+              >
+                VNI
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/marketwatch-vn30"
+                className="bg-bgListMarketWatch hover:bg-activeListDropMarketWatch  py-1.5 px-2.5 text-xs block whitespace-no-wrap text-white"
+              >
+                VN30
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <Tooltip title="Hiện đồ thị">
+            <span
+              id="spExpand"
+              className="imgExpandOpen"
+              onClick={() => callExpand("spExpand", "imgExpandOpen")}
+            ></span>
+          </Tooltip>
+          {/* <Tooltip title="Hiện đồ thị">
+          <span id="spExpand" className="imgExpandClose" onClick={()=>callExpand("spExpand","imgExpandOpen")}></span>
+        </Tooltip> */}
+        </div>
+      </div>
+
+
+
+
+      import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import './style.scss'
+interface MenuItem {
+  label: string;
+  path: string;
+  children?: MenuItem[];
+}
+
+const menuItems: MenuItem[] = [
+  {
+    label: 'Home',
+    path: '/',
+    children: [
+      {
+        label: 'Service 1',
+        path: '/report/AssetReport2/1',
+      },
+      {
+        label: 'Service 2',
+        path: '/report/AssetReport2/2',
+      },
+    ],
+  },
+  {
+    label: 'About',
+    path: '/about',
+  },
+  {
+    label: 'Services',
+    path: '/services',
+    children: [
+      {
+        label: 'Service 1',
+        path: '/services/1',
+      },
+      {
+        label: 'Service 2',
+        path: '/services/2',
+      },
+    ],
+  },
+];
+
+const AssetReport = () => {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  const handleMenuItemClick = (index: number) => {
+    setActiveIndex(index);
+  };
+
+  const renderMenuItem = (item: MenuItem, index: number) => {
+    const isActive = activeIndex === index;
+
+    return (
+      <li
+        key={item.path}
+        onClick={() => handleMenuItemClick(index)}
+        // className={isActive ? 'active' : ''}
+        className={`list-sub-menu ${isActive ? 'active' : '' }`}
+      >
+        <NavLink to={item.path}>{item.label}</NavLink>
+        {item.children && (
+          <ul className="sub-menu">
+            {item.children.map((childItem, childIndex) => (
+              <li key={childItem.path}>
+                <NavLink to={childItem.path}>{childItem.label}</NavLink>
+              </li>
+            ))}
+          </ul>
+        )}
+      </li>
+    );
+  };
+
+  return (
+    <nav>
+      <ul>
+        {menuItems.map((item, index) => renderMenuItem(item, index))}
+      </ul>
+    </nav>
+  );
+};
+
+
+export default AssetReport
+
+
+{/* <HeaderMarketW/> 
+         <div>
+          <table className="w-full tableMW ">
+         
+            <colgroup>
+              <col className="col-symbol" />
+              <col className="show-on-mobile col-price bg-BGTableHoverMarket" />
+              <col className="show-on-mobile col-price bg-BGTableHoverMarket" />
+              <col className="show-on-mobile col-price bg-BGTableHoverMarket" />
+              <col className="col-price" />
+              <col className="col-vol" />
+              <col className="col-price" />
+              <col className="col-vol" />
+              <col className="col-price" />
+              <col className="col-vol" />
+              <col className="col-price" />
+              <col className="col-vol col-vol-sm" />
+              <col className="col-diff" />
+              <col className="col-price" />
+              <col className="col-vol" />
+              <col className="col-price" />
+              <col className="col-vol" />
+              <col className="col-price" />
+              <col className="col-vol" />
+              <col className="col-vol-total" />
+              <col className="col-price-open" />
+              <col className="col-price-high" />
+              <col className="col-price-short" />
+              <col className="col-vol-foreign-buy" />
+              <col className="col-vol-foreign-sell" />
+              <col className="col-vol-still" />
+            </colgroup>
+          
+          </table>
+        </div> */}
+
+              {/* <colgroup>
+            <col className="col-symbol" />
+            <col className="show-on-mobile col-price bg-BGTableHoverMarket" />
+            <col className="show-on-mobile col-price bg-BGTableHoverMarket" />
+            <col className="show-on-mobile col-price bg-BGTableHoverMarket" />
+            <col className="col-price" />
+            <col className="col-vol" />
+            <col className="col-price" />
+            <col className="col-vol" />
+            <col className="col-price" />
+            <col className="col-vol" />
+            <col className="col-price" />
+            <col className="col-vol col-vol-sm" />
+            <col className="col-diff" />
+            <col className="col-price" />
+            <col className="col-vol" />
+            <col className="col-price" />
+            <col className="col-vol" />
+            <col className="col-price" />
+            <col className="col-vol" />
+            <col className="col-vol-total" />
+            <col className="col-price-open" />
+            <col className="col-price-high" />
+            <col className="col-price-short" />
+            <col className="col-vol-foreign-buy" />
+            <col className="col-vol-foreign-sell" />
+            <col className="col-vol-still" />
+          </colgroup> */}
+
+
+
+          // const handleContextMenu = (e: any) => {
+  //   if(e){
+  //     e.preventDefault();
+  //     const element = e as HTMLInputElement
+  //   const trValue = element.parentElement?.getAttribute('data-tr-value');
+  //   if(trValue){
+  //     setPopupPosition({ x: e.clientX, y: e.clientY });
+  //     setPopupVisible(true);
+  //   } 
+  //   }
+    
+  // }
+
+  import React, { RefObject, useEffect, useRef, useState } from 'react'
+import MenuMarketWatch from '../components/indexMarketWatch/MenuMarketWatch'
+import Slider, { Settings } from 'react-slick'
+import axios from 'axios';
+import { ObjectMenuHSX, ObjectMenuHNX } from '../models/modelListMenuHSX';
+import { fStatusMarketHNX, iconColorMenuMarket, setColorMenuMarket } from '../utils/util';
+import '../components/indexMarketWatch/styleMenuBarMW.css'
+import './slide.scss'
+
+// const SamplePrevArrow = (props:any) => {
+//     const { onClick } = props;
+//     return (
+//         <div className="scrollingHotSpotLeft" style={{display: 'block', opacity: 0}} />
+//     );
+//   };
+  
+//   const SampleNextArrow = (props:any) => {
+//     const { onClick } = props;
+//     return (
+       
+//     );
+//   };
+ 
+const Slides = () => {
+    const [isHovering, setIsHovering] = useState(false);
+
+  const sliderRef = useRef<Slider | null>(null);
+  const handleMouseEnter = () => {
+    sliderRef?.current?.slickPrev();
+  }; // Change type of sliderRef to RefObject<Slider | null>
+//   const handleMouseMove = (event:any) => {
+//     const slider = sliderRef.current;
+//     console.log(slider)
+//     if (slider) { 
+//         const sliderDiv = slider.innerSlider?.list;
+//         //console.log(sliderDiv)
+//   if (sliderDiv instanceof HTMLElement) {
+//     const distanceFromRight = 2000 - sliderDiv.offsetWidth - sliderDiv.scrollLeft;
+// console.log(sliderDiv.scrollWidth, sliderDiv.scrollLeft, sliderDiv.offsetWidth)
+//     //console.log(distanceFromRight)
+//     if (distanceFromRight < 50) {
+//       slider.slickNext();
+//     } else if (distanceFromRight > 200) {
+//       slider.slickPrev();
+//     }
+//   }
+//         // console.log(slider?.innerSlider)
+//         // const sliderRect = slider?.innerSlider?.list?.getBoundingClientRect();
+//         // if(sliderRect)// Access the inner slider element with slider.slider
+//         // {const x = event.clientX - sliderRect?.left;
+//         // const y = event.clientY - sliderRect?.top;
+//         // const width = sliderRect.width;
+//         // const height = sliderRect.height;
+//         // const centerX = width / 2;
+//         // const centerY = height / 2;
+//         // const deltaX = centerX - x;
+//         // const deltaY = centerY - y;
+//         // const percentX = deltaX / centerX;
+//         // const percentY = deltaY / centerY;
+//         // const amount = 0.2;
+//         // slider.scrollLeft += percentX * amount * slider.scrollWidth;
+//         // }
+//         // console.log(sliderRect)
+//     }
+//   };
+  
+  const settings = {
+//     dots: true,
+//     infinite: true,
+//     speed: 500,
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     // prevArrow: <SamplePrevArrow />,
+//     // nextArrow: <SampleNextArrow />,
+//     centerMode: true,
+//   centerPadding: '6px', // You can adjust the padding to fit your needs
+dots: false,
+infinite: true,
+speed: 500,
+slidesToShow: 1,
+slidesToScroll: 1,
+autoplay: !isHovering,
+autoplaySpeed: 2000,
+cssEase: "linear"
+  };
+  
+
+  return (
+    <div className="App">
+      <h1>React Slick Example</h1>
+      <div className="scrollingHotSpotLeft" style={{opacity: 0}}  onMouseOver={handleMouseEnter}/>
+      <Slider {...settings} ref={sliderRef} className="custom-carousel">
+  <div style={{width: '220px'}}>Slide 1</div>
+  <div style={{width: '220px'}}>Slide 2</div>
+  <div style={{width: '220px'}}>Slide 3</div>
+  <div style={{width: '220px'}}>Slide 4</div>
+  <div style={{width: '220px'}}>Slide 5</div>
+  <div style={{width: '220px'}}>Slide 6</div>
+  <div style={{width: '220px'}}>Slide 7</div>
+  <div style={{width: '220px'}}>Slide 8</div>
+  <div style={{width: '220px'}}>Slide 9</div>
+  <div style={{width: '220px'}}>Slide 10</div>
+  <div style={{width: '220px'}}>Slide 11</div>
+  <div style={{width: '220px'}}>Slide 12</div>
+  <div style={{width: '220px'}}>Slide 13</div>
+  <div style={{width: '220px'}}>Slide 14</div>
+  <div style={{width: '220px'}}>Slide 15</div>
+      </Slider>
+      <div className="scrollingHotSpotRight" style={{opacity: 0}}  onMouseOver={handleMouseEnter}/>
+    </div>
+  );
+}
+
+export default Slides;
+
+
+
+// 21/04 10h12  
+  // var dataHNXRealTime = JSON.parse(dataHNX);
+  // if (typeof dataHNXRealTime !== "undefined") {
+  //   const dataRTLT= Object.keys(dataHNXRealTime)
+  //   if(dataRTLT.length !== 0){
+  //   const dataRT = dataHNXRealTime.M;
+  //   let arrDatas = [];
+
+  //   if (typeof dataRT !== "undefined") {
+  //     //let arrTest =JSON.parse(dataRT.A[0].Change);
+  //     dataRT.map((dataLT: any) => (
+  //       // console.log(dataLT),
+  //         arrDatas = JSON.parse(dataLT.A[0].Change),
+  //         arrDatas.map(
+  //           (arrData: any) => (
+  //             updateTableHNX(arrData)
+  //           )
+  //         )
+  //       )
+  //     );
+  //   }
+  // }
+  // } else {
+
+  // }
+
+  // const dataHSXRealTime = JSON.parse(dataHSX);
+  // if (typeof dataHSXRealTime === "undefined") {
+  // } else {
+  //   const dataRTHSX = dataHSXRealTime.M;
+  //   let arrDataHSX = [];
+  //   let arrData = [];
+  //   // console.log(dataRTHSX)
+  //     if (typeof dataRTHSX !== "undefined") {
+  //       if(Array.isArray(dataRTHSX)){
+  //         dataRTHSX?.map((dataRT: any) => (
+  //           // arrData = dataRT.A[0],
+
+  //           arrDataHSX = JSON.parse(dataRT.A[0].Change),
+  //           arrDataHSX?.map((arrDataHSX: any) => (  updateTableHNX(arrDataHSX)) )),
+  //       );
+  //       }
+  //     }
+  // }
+
+
+  import { useState, useRef } from "react";
+import './slide.scss'
+
+const DraggableDiv: React.FC = () => {
+  const windowHeight = window.innerHeight - 40;
+  const [heightW, setHeightW] = useState<number>(windowHeight);
+  const [height, setHeight] = useState<number>(200);
+
+  const draggingRef = useRef<boolean>(false);
+  const yOffsetRef = useRef<number>(0);
+
+  const handleDragStart = (e: React.DragEvent<HTMLDivElement>) => {
+    draggingRef.current = true;
+    yOffsetRef.current = e.clientY - height;
+    e.dataTransfer?.setDragImage(new Image(), 0, 0); // ẩn hiệu ứng kéo thả mặc định
+  };
+
+  const handleDrag = (e: React.DragEvent<HTMLDivElement>) => {
+    if (draggingRef.current) {
+      const newHeight = e.clientY - yOffsetRef.current;
+      requestAnimationFrame(() => {
+        setHeight(newHeight);
+      });
+    }
+  };
+
+  const handleDragEnd = () => {
+    draggingRef.current = false;
+  };
+
+  return (
+    <div className="relative">
+      <div
+        style={{
+          height: `${height}px`,
+          backgroundColor: "grey",
+     
+        }}
+      
+      >
+      div ngoài
+      </div>
+ 
+      <div
+      className="red-div"
+        style={{
+          height: `${heightW - height}px`,
+          backgroundColor: "red",
+          cursor: "grab",
+        }}
+        onClick={(e) => e.stopPropagation()}
+        draggable
+        onDragStart={handleDragStart}
+        onDrag={handleDrag}
+        onDragEnd={handleDragEnd}
+      >
+          Drag me!
+      </div>
+    </div>
+  );
+};
+
+export default DraggableDiv;
+
+import { useState, useRef } from "react";
+import './slide.scss'
+
+const DraggableDiv: React.FC = () => {
+  const windowHeight = window.innerHeight - 40;
+  const divOneHeight = windowHeight * 5.7 / 10;
+const divTwoHeight = windowHeight * 4.3 / 10;
+const [divOne, setDivOne] = useState<number>(divOneHeight);
+const [divTwo, setDivTwo] = useState<number>(divTwoHeight);
+  const [heightW, setHeightW] = useState<number>(windowHeight);
+  const [height, setHeight] = useState<number>(200);
+
+  const draggingRef = useRef<boolean>(false);
+  const yOffsetRef = useRef<number>(0);
+
+  const handleDragStart = (e: React.DragEvent<HTMLDivElement>) => {
+    draggingRef.current = true;
+    yOffsetRef.current = e.clientY - height;
+    e.dataTransfer?.setDragImage(new Image(), 0, 0); // ẩn hiệu ứng kéo thả mặc định
+  };
+
+  const handleDrag = (e: React.DragEvent<HTMLDivElement>) => {
+    if (draggingRef.current) {
+      const newHeight = e.clientY - yOffsetRef.current;
+      requestAnimationFrame(() => {
+        setHeight(newHeight);
+      });
+    }
+  };
+
+  const handleDragEnd = () => {
+    draggingRef.current = false;
+  };
+
+  return (
+    <div className="relative">
+      <div
+        style={{
+            height: `${divOneHeight}px`,
+          backgroundColor: "grey",
+     
+        }}
+      
+      >
+      div 1
+      </div>
+ 
+      <div
+      className="red-div"
+        style={{
+            height: `${divTwoHeight}px`,
+          backgroundColor: "red",
+          cursor: "grab",
+        }}
+        onClick={(e) => e.stopPropagation()}
+        draggable
+        onDragStart={handleDragStart}
+        onDrag={handleDrag}
+        onDragEnd={handleDragEnd}
+      >
+         div 2
+      </div>
+    </div>
+  );
+};
+
+export default DraggableDiv;
+
+
+
+
+// export const fetchTableHNXAsync = createAsyncThunk<[]>(
+//     "table/fecthTableHNX",
+//     async () => {
+//         const res = await fetch('http://marketstream.fpts.com.vn/hnx/data.ashx?s=quote&l=HNXIndex');
+      
+//         const data = await res.json();
+//         console.log(data)
+//         return data;
+//     }
+// );
+// export const fetchTableHNX30Async = createAsyncThunk<[]>(
+//     "table/fecthTableHN30",
+//     async () => {
+//         const res = await fetch('http://marketstream.fpts.com.vn/hnx/data.ashx?s=quote&l=HNX30');
+      
+//         const data = await res.json();
+//         console.log(data)
+//         return data;
+//     }
+// );
+// export const fetchTableBONDAsync = createAsyncThunk<[]>(
+//     "table/fecthTableBOND",
+//     async () => {
+//         const res = await fetch('http://marketstream.fpts.com.vn/hnx/data.ashx?s=quote&l=BOND');
+      
+//         const data = await res.json();
+//         console.log(data)
+//         return data;
+//     }
+// );
+// export const fetchStatusAsync = createAsyncThunk<[]>(
+//     "table/fecthStatusMarket",
+//     async () => {
+//         const res = await fetch('http://marketstream.fpts.com.vn/hsx/data.ashx?s=index');
+      
+//         const data = await res.json();
+//         console.log(data)
+//         return data;
+//     }
+// );
+// export const fetchTableHSXAsync = createAsyncThunk<[]>(
+//     "table/fecthTableHSX",
+//     async () => {
+//         const res = await fetch('https://marketstream.fpts.com.vn/hsx/data.ashx?s=quote&l=All');
+//         const data = await res.json();
+//         console.log(data)
+//         return data;
+//     }
+// );
+// export const fetchCompanyAsync = createAsyncThunk<[]>(
+//     "table/fecthCompany",
+//     async () => {
+//         const res = await fetch('http://localhost:8430/api/stock/v1/cache/stock_info_cn/eztrade?code=ALL');
+//         const data = await res.json();
+//         console.log(data)
+//         return data;
+//         // const res = await agent.Company.get();
+   
+//         // // const data = await res.json();
+//         // console.log(res)
+//         // return res;
+//     }
+// );

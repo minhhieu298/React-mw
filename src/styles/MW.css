@@ -1,0 +1,226 @@
+.border-bottom {
+   border-bottom: 1px double #00ff00 !important;
+ }
+
+
+ 
+.tableMW tr td:hover{
+   background-color: #444444;
+}
+.tableMW tr td {
+   padding: 2px 4px;
+   border: 1px solid #505050;
+   font-weight:400;
+   font-size:13.333333px
+} 
+/* 'red': '#FF0000',
+'green':'#00FF00',
+'blue':"#66CCFF",
+'violet':'#FF00FF',
+'yellow': '#F7FF31', */
+.text-red{
+  color:#FF0000 !important
+}
+.text-white{
+   color:#fff  !important
+}
+.text-blue{ 
+   color:#66CCFF  !important
+}
+.text-violet{
+   color:#FF00FF  !important
+}
+.text-green{
+   color:#00FF00  !important
+}
+.text-yellow{
+   color:#F7FF31  !important
+}
+.bg-tdHover{
+   background-color: #797979;
+}
+.arrowUp, .arrowDown, .square {
+   background-image: url(../../public/Arrow.png);
+   background-repeat: no-repeat;
+   display: inline-block;
+   width: 12px;
+   height: 12px;
+}
+.arrowDown {
+   background-position: -43px -1px;
+}
+.arrowUp {
+   background-position: -6px -2px;
+}
+.square{
+   background-position: -25px -2px
+}
+.txtIndex{
+   padding: 0 3px;
+}
+.maru {
+   color: #00ff00 !important;
+}
+.marn {
+   color: #f7ff31 !important;
+}
+.marf {
+   color: #66ccff !important;
+}
+.mard {
+   color: #ff0000 !important;
+}
+.marc {
+   color: #ff00ff !important;
+}
+.imgExpandOpen, .imgExpandOpen:hover, .spExpand{
+   margin-left: 3px;
+   background-image: url(../../public/arrowdown_2.png);
+   background-repeat: no-repeat;
+   display: block;
+   width: 30px;
+   height: 30px;
+   cursor: pointer;
+}
+.dvChart:hover{
+   border: 1px solid #ffffff;
+    cursor: default;
+}
+.dvChart{
+   min-width: 220px;
+    max-width: 220px;
+    text-align: center;
+    border: 1px solid transparent;
+    height: 157px;
+}
+.col-symbol {
+   width: 5.5%;
+}
+ .col-price {
+   width: 3%;
+}
+.col-diff{
+   width: 3%;
+}
+.col-vol {
+   width: 4.5%;
+}
+.col-foreign-buy, .col-foreign-sell, .col-macd, .col-vol-total, .col-price-open, .col-rsi, .col-total-vol {
+   width: 4%;
+}
+.col-price-open, .col-price-high, .col-price-short{
+   width: 3.5%;
+}
+.col-vol-total{
+   width: 5%;
+}
+.col-vol-foreign-sell, .col-vol-foreign-buy{
+   width: 4%;
+}
+.col-vol-still{
+   width: 6%;
+}
+/* #divIndexChart{
+   width: 3000px;
+} */
+.mar_{
+   color: #ffffff !important;
+}
+.imgCustom{
+   background: url(../../public/custom30.png) no-repeat;
+   display: inline-block;
+   width: 30px;
+   height: 30px;
+   /* margin: 6px 0; */
+   border: none;
+   margin-right: 10px;
+   cursor: pointer;
+}
+.imgCustom:hover{
+   background-position: -30px 0
+}
+.date-time {
+   display: inline-block;
+   text-align: right;
+   margin: 0 8px 0 0;
+   overflow: hidden;
+   /* float: left; */
+}
+#divAcount, #lbDate, #lbClock {
+   text-align: center;
+   font-size: 12px;
+   padding: 7px 6px 0 3px;
+}
+.imgHelp{
+   background: url(../../public/help30.png) no-repeat;
+   display: inline-block;
+   width: 29px;
+   height: 30px;
+   /* margin: 6px 0; */
+   border: none;
+   cursor: pointer;
+}
+.imgHelp:hover{
+   background-position: -29px 0
+}
+/* .imgChart{
+   background: url(../../public/line-chart-32.png) no-repeat;
+   display: inline-block;
+   width: 29px;
+   height: 30px;
+   margin: 6px 0; 
+   border: none;
+   cursor: pointer;
+} */
+.imgChart:hover{
+
+}
+
+.child-center {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.d-none-kl{
+   display: none;
+}
+.d-block-kl{
+   display: block;
+}
+.chart3d{
+   margin: 2px 0px;
+   background: url(../../public/chart.png) no-repeat;
+   width: 204px;
+   height: 97px;
+}
+.imgExpand{
+   margin-left: 3px;
+   background-image: url(../../public/arrowup_2.png);
+   background-repeat: no-repeat;
+   display: block;
+   width: 30px;
+   height: 30px;
+   cursor: pointer;
+}
+.footer-content {
+   padding: 10px 0;
+   text-align: center;
+   color: #717171;
+}
+.btn-chart {
+   border-radius: unset;
+   height: 30px;
+   width: 40px;
+   background: transparent;
+   padding: 5px 10px;
+   margin-right: 5px;
+}
+.btn-chart:hover {
+   background-color: #2371AF !important;
+   color: #fff;
+}
+.tableMW{
+   background-color: #1D1D1D;
+   color:#fff
+}
